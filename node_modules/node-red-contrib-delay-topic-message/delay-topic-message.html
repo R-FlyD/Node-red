@@ -1,0 +1,50 @@
+<script type="text/javascript">
+	RED.nodes.registerType('delay-topic-message', {
+		category: 'function',
+		color: '#62a969',
+		defaults: {
+			delay: {
+				value: 5,
+				required: true,
+				validate: RED.validators.number(),
+			},
+		},
+		inputs: 1,
+		outputs: 1,
+		icon: 'delay-topic-message.png',
+		label: function() {
+			return this.name || this.delay + 's delay';
+		}
+	});
+</script>
+
+<script type="text/html" data-template-name="delay-topic-message">
+	<div class="form-row">
+		<label for="node-input-delay"><i class="fa fa-clock-o"></i> Delay</label>
+		<input type="text" id="node-input-delay" placeholder="Delay in seconds">
+		<span>seconds</span>
+	</div>
+</script>
+
+<script type="text/html" data-help-name="delay-topic-message">
+	<p>
+		<strong>Basic usage</strong>
+	</p>
+	<p>
+		Delay message by set seconds.
+	</p>
+	<p>
+		When received <code>msg</code> with same <code>topic</code>, timer is reset and previous message is discarded.
+	</p>
+	<p>
+		<strong>Message options</strong>
+	</p>
+	<ul>
+		<li>
+			<code>msg.stopTimer</code>: If set to <code>true</code>, timer is stopped and message in <code>topic</code> is discarded.
+		</li>
+		<li>
+			<code>msg.delay</code>: Overrides default delay in timer.
+		</li>
+	</ul>
+</script>

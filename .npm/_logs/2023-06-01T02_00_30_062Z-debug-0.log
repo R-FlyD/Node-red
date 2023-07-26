@@ -1,0 +1,1226 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.19.4
+2 info using node@v16.20.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 4ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 3ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 0ms
+11 timing config:load:project Completed in 6ms
+12 timing config:load:file:/root/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 0ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 9ms
+15 timing config:load:global Completed in 9ms
+16 timing config:load:validate Completed in 1ms
+17 timing config:load:credentials Completed in 1ms
+18 timing config:load:setEnvs Completed in 1ms
+19 timing config:load Completed in 28ms
+20 timing npm:load:configload Completed in 28ms
+21 timing npm:load:mkdirpcache Completed in 2ms
+22 timing npm:load:mkdirplogs Completed in 1ms
+23 verbose title npm install node-red-contrib-aedes@0.11.1
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-contrib-aedes@0.11.1"
+25 timing npm:load:setTitle Completed in 2ms
+26 timing config:load:flatten Completed in 8ms
+27 timing npm:load:display Completed in 11ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-06-01T02_00_30_062Z-debug-0.log
+30 timing npm:load:logFile Completed in 8ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 1ms
+33 timing npm:load Completed in 54ms
+34 timing arborist:ctor Completed in 1ms
+35 silly logfile start cleaning logs, removing 1 files
+36 silly logfile done cleaning log files
+37 timing idealTree:init Completed in 65ms
+38 timing idealTree:userRequests Completed in 5ms
+39 silly idealTree buildDeps
+40 silly fetch manifest node-red-contrib-aedes@0.11.1
+41 timing arborist:ctor Completed in 1ms
+42 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-aedes 1053ms (cache revalidated)
+43 silly placeDep ROOT node-red-contrib-aedes@0.11.1 OK for: node-red-project@0.0.1 want: 0.11.1
+44 silly fetch manifest aedes@^0.49.0
+45 silly fetch manifest aedes-persistence-mongodb@^9.1.1
+46 silly fetch manifest aedes-persistence-level@^8.0.1
+47 silly fetch manifest level@^8.0.0
+48 silly fetch manifest websocket-stream@^5.5.2
+49 http fetch GET 200 https://registry.npmjs.org/aedes 362ms (cache revalidated)
+50 http fetch GET 200 https://registry.npmjs.org/level 371ms (cache revalidated)
+51 http fetch GET 200 https://registry.npmjs.org/aedes-persistence-level 860ms (cache revalidated)
+52 http fetch GET 200 https://registry.npmjs.org/websocket-stream 881ms (cache revalidated)
+53 http fetch GET 200 https://registry.npmjs.org/aedes-persistence-mongodb 906ms (cache revalidated)
+54 timing idealTree:#root Completed in 1976ms
+55 silly placeDep ROOT aedes@0.49.0 OK for: node-red-contrib-aedes@0.11.1 want: ^0.49.0
+56 silly placeDep ROOT aedes-persistence-level@8.0.1 OK for: node-red-contrib-aedes@0.11.1 want: ^8.0.1
+57 silly placeDep ROOT aedes-persistence-mongodb@9.1.1 OK for: node-red-contrib-aedes@0.11.1 want: ^9.1.1
+58 silly placeDep ROOT level@8.0.0 OK for: node-red-contrib-aedes@0.11.1 want: ^8.0.0
+59 silly placeDep ROOT websocket-stream@5.5.2 OK for: node-red-contrib-aedes@0.11.1 want: ^5.5.2
+60 silly fetch manifest aedes-packet@^3.0.0
+61 silly fetch manifest aedes-persistence@^9.1.2
+62 silly fetch manifest end-of-stream@^1.4.4
+63 silly fetch manifest fastfall@^1.5.1
+64 silly fetch manifest fastparallel@^2.4.1
+65 silly fetch manifest fastseries@^2.0.0
+66 silly fetch manifest hyperid@^3.1.1
+67 silly fetch manifest mqemitter@^5.0.0
+68 silly fetch manifest mqtt-packet@^8.1.2
+69 silly fetch manifest retimer@^3.0.0
+70 silly fetch manifest reusify@^1.0.4
+71 silly fetch manifest uuid@^9.0.0
+72 silly fetch manifest aedes-packet@^2.3.1
+73 silly fetch manifest msgpack-lite@^0.1.26
+74 silly fetch manifest qlobber@^6.0.0
+75 silly fetch manifest aedes-cached-persistence@^9.0.0
+76 silly fetch manifest escape-string-regexp@^4.0.0
+77 silly fetch manifest mongodb@^4.13.0
+78 silly fetch manifest native-url@^0.3.4
+79 silly fetch manifest pump@^3.0.0
+80 silly fetch manifest qlobber@^7.0.1
+81 silly fetch manifest through2@^4.0.2
+82 silly fetch manifest browser-level@^1.0.1
+83 silly fetch manifest classic-level@^1.2.0
+84 silly fetch manifest duplexify@^3.5.1
+85 silly fetch manifest inherits@^2.0.1
+86 silly fetch manifest readable-stream@^2.3.3
+87 silly fetch manifest safe-buffer@^5.1.2
+88 silly fetch manifest ws@^3.2.0
+89 http fetch GET 200 https://registry.npmjs.org/reusify 255ms (cache revalidated)
+90 http fetch GET 200 https://registry.npmjs.org/pump 277ms (cache revalidated)
+91 http fetch GET 200 https://registry.npmjs.org/through2 329ms (cache updated)
+92 http fetch GET 200 https://registry.npmjs.org/aedes-persistence 926ms (cache revalidated)
+93 http fetch GET 200 https://registry.npmjs.org/fastseries 934ms (cache revalidated)
+94 http fetch GET 200 https://registry.npmjs.org/aedes-packet 944ms (cache revalidated)
+95 http fetch GET 200 https://registry.npmjs.org/end-of-stream 944ms (cache revalidated)
+96 http fetch GET 200 https://registry.npmjs.org/inherits 943ms (cache revalidated)
+97 http fetch GET 200 https://registry.npmjs.org/retimer 961ms (cache revalidated)
+98 http fetch GET 200 https://registry.npmjs.org/uuid 966ms (cache revalidated)
+99 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 1001ms (cache revalidated)
+100 http fetch GET 200 https://registry.npmjs.org/fastparallel 1010ms (cache revalidated)
+101 http fetch GET 200 https://registry.npmjs.org/msgpack-lite 1009ms (cache revalidated)
+102 http fetch GET 200 https://registry.npmjs.org/mqemitter 1021ms (cache revalidated)
+103 http fetch GET 200 https://registry.npmjs.org/mqtt-packet 1022ms (cache revalidated)
+104 http fetch GET 200 https://registry.npmjs.org/fastfall 1038ms (cache revalidated)
+105 http fetch GET 200 https://registry.npmjs.org/qlobber 1032ms (cache revalidated)
+106 http fetch GET 200 https://registry.npmjs.org/aedes-cached-persistence 1036ms (cache revalidated)
+107 http fetch GET 200 https://registry.npmjs.org/aedes-packet 1046ms (cache revalidated)
+108 http fetch GET 200 https://registry.npmjs.org/ws 1031ms (cache revalidated)
+109 http fetch GET 200 https://registry.npmjs.org/safe-buffer 1051ms (cache revalidated)
+110 http fetch GET 200 https://registry.npmjs.org/readable-stream 1053ms (cache revalidated)
+111 http fetch GET 200 https://registry.npmjs.org/duplexify 1060ms (cache revalidated)
+112 http fetch GET 200 https://registry.npmjs.org/hyperid 1091ms (cache revalidated)
+113 http fetch GET 200 https://registry.npmjs.org/mongodb 1143ms (cache revalidated)
+114 http fetch GET 200 https://registry.npmjs.org/classic-level 1207ms (cache revalidated)
+115 http fetch GET 200 https://registry.npmjs.org/qlobber 1720ms (cache revalidated)
+116 http fetch GET 200 https://registry.npmjs.org/native-url 1758ms (cache revalidated)
+117 http fetch GET 200 https://registry.npmjs.org/browser-level 1775ms (cache revalidated)
+118 timing idealTree:node_modules/node-red-contrib-aedes Completed in 1803ms
+119 silly placeDep ROOT aedes-packet@3.0.0 OK for: aedes@0.49.0 want: ^3.0.0
+120 silly placeDep ROOT aedes-persistence@9.1.2 OK for: aedes@0.49.0 want: ^9.1.2
+121 silly placeDep ROOT end-of-stream@1.4.4 OK for: aedes@0.49.0 want: ^1.4.4
+122 silly placeDep ROOT fastfall@1.5.1 OK for: aedes@0.49.0 want: ^1.5.1
+123 silly placeDep ROOT fastparallel@2.4.1 OK for: aedes@0.49.0 want: ^2.4.1
+124 silly placeDep ROOT fastseries@2.0.0 OK for: aedes@0.49.0 want: ^2.0.0
+125 silly placeDep ROOT hyperid@3.1.1 OK for: aedes@0.49.0 want: ^3.1.1
+126 silly placeDep ROOT mqemitter@5.0.0 OK for: aedes@0.49.0 want: ^5.0.0
+127 silly placeDep ROOT mqtt-packet@8.1.2 OK for: aedes@0.49.0 want: ^8.1.2
+128 silly placeDep ROOT retimer@3.0.0 OK for: aedes@0.49.0 want: ^3.0.0
+129 silly placeDep ROOT reusify@1.0.4 OK for: aedes@0.49.0 want: ^1.0.4
+130 silly placeDep ROOT uuid@9.0.0 OK for: aedes@0.49.0 want: ^9.0.0
+131 silly fetch manifest mqtt-packet@^7.0.0
+132 silly fetch manifest qlobber@^7.0.0
+133 silly fetch manifest once@^1.4.0
+134 silly fetch manifest uuid@^8.3.2
+135 silly fetch manifest uuid-parse@^1.1.0
+136 silly fetch manifest bl@^5.0.0
+137 silly fetch manifest debug@^4.1.1
+138 silly fetch manifest process-nextick-args@^2.0.1
+139 http fetch GET 200 https://registry.npmjs.org/once 77ms (cache revalidated)
+140 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 93ms (cache revalidated)
+141 http fetch GET 200 https://registry.npmjs.org/bl 97ms (cache revalidated)
+142 http fetch GET 200 https://registry.npmjs.org/debug 106ms (cache updated)
+143 http fetch GET 200 https://registry.npmjs.org/uuid-parse 861ms (cache revalidated)
+144 timing idealTree:node_modules/aedes Completed in 887ms
+145 silly placeDep node_modules/aedes-packet mqtt-packet@7.1.2 OK for: aedes-packet@3.0.0 want: ^7.0.0
+146 silly fetch manifest bl@^4.0.2
+147 timing idealTree:node_modules/aedes-packet Completed in 4ms
+148 silly placeDep ROOT qlobber@7.0.1 OK for: aedes-persistence@9.1.2 want: ^7.0.0
+149 timing idealTree:node_modules/aedes-persistence Completed in 2ms
+150 silly placeDep node_modules/aedes-persistence-level aedes-packet@2.3.1 OK for: aedes-persistence-level@8.0.1 want: ^2.3.1
+151 silly placeDep ROOT msgpack-lite@0.1.26 OK for: aedes-persistence-level@8.0.1 want: ^0.1.26
+152 silly placeDep node_modules/aedes-persistence-level qlobber@6.0.0 OK for: aedes-persistence-level@8.0.1 want: ^6.0.0
+153 silly fetch manifest mqtt-packet@^6.3.0
+154 silly fetch manifest event-lite@^0.1.1
+155 silly fetch manifest ieee754@^1.1.8
+156 silly fetch manifest int64-buffer@^0.1.9
+157 silly fetch manifest isarray@^1.0.0
+158 http fetch GET 200 https://registry.npmjs.org/ieee754 65ms (cache revalidated)
+159 http fetch GET 200 https://registry.npmjs.org/isarray 79ms (cache revalidated)
+160 http fetch GET 200 https://registry.npmjs.org/event-lite 292ms (cache revalidated)
+161 http fetch GET 200 https://registry.npmjs.org/int64-buffer 872ms (cache revalidated)
+162 timing idealTree:node_modules/aedes-persistence-level Completed in 883ms
+163 silly placeDep ROOT aedes-cached-persistence@9.0.0 OK for: aedes-persistence-mongodb@9.1.1 want: ^9.0.0
+164 silly placeDep ROOT escape-string-regexp@4.0.0 OK for: aedes-persistence-mongodb@9.1.1 want: ^4.0.0
+165 silly placeDep ROOT mongodb@4.16.0 OK for: aedes-persistence-mongodb@9.1.1 want: ^4.13.0
+166 silly placeDep ROOT native-url@0.3.4 OK for: aedes-persistence-mongodb@9.1.1 want: ^0.3.4
+167 silly placeDep ROOT pump@3.0.0 OK for: aedes-persistence-mongodb@9.1.1 want: ^3.0.0
+168 silly placeDep ROOT through2@4.0.2 OK for: aedes-persistence-mongodb@9.1.1 want: ^4.0.2
+169 silly fetch manifest multistream@^4.1.0
+170 silly fetch manifest bson@^4.7.2
+171 silly fetch manifest mongodb-connection-string-url@^2.5.4
+172 silly fetch manifest socks@^2.7.1
+173 silly fetch manifest @aws-sdk/credential-providers@^3.186.0
+174 silly fetch manifest saslprep@^1.0.3
+175 silly fetch manifest querystring@^0.2.0
+176 silly fetch manifest once@^1.3.1
+177 silly fetch manifest readable-stream@3
+178 http fetch GET 200 https://registry.npmjs.org/socks 85ms (cache revalidated)
+179 http fetch GET 200 https://registry.npmjs.org/querystring 97ms (cache revalidated)
+180 http fetch GET 200 https://registry.npmjs.org/mongodb-connection-string-url 297ms (cache revalidated)
+181 http fetch GET 200 https://registry.npmjs.org/saslprep 306ms (cache revalidated)
+182 http fetch GET 200 https://registry.npmjs.org/multistream 872ms (cache revalidated)
+183 http fetch GET 200 https://registry.npmjs.org/bson 894ms (cache revalidated)
+184 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-providers 1967ms (cache updated)
+185 timing idealTree:node_modules/aedes-persistence-mongodb Completed in 1984ms
+186 silly placeDep ROOT multistream@4.1.0 OK for: aedes-cached-persistence@9.0.0 want: ^4.1.0
+187 silly fetch manifest readable-stream@^3.6.0
+188 timing idealTree:node_modules/aedes-cached-persistence Completed in 4ms
+189 silly placeDep ROOT once@1.4.0 OK for: end-of-stream@1.4.4 want: ^1.4.0
+190 silly fetch manifest wrappy@1
+191 http fetch GET 200 https://registry.npmjs.org/wrappy 51ms (cache revalidated)
+192 timing idealTree:node_modules/end-of-stream Completed in 55ms
+193 timing idealTree:node_modules/escape-string-regexp Completed in 0ms
+194 timing idealTree:node_modules/fastfall Completed in 0ms
+195 timing idealTree:node_modules/fastparallel Completed in 0ms
+196 timing idealTree:node_modules/fastseries Completed in 0ms
+197 silly placeDep node_modules/hyperid uuid@8.3.2 OK for: hyperid@3.1.1 want: ^8.3.2
+198 silly placeDep ROOT uuid-parse@1.1.0 OK for: hyperid@3.1.1 want: ^1.1.0
+199 timing idealTree:node_modules/hyperid Completed in 3ms
+200 silly placeDep ROOT browser-level@1.0.1 OK for: level@8.0.0 want: ^1.0.1
+201 silly placeDep ROOT classic-level@1.3.0 OK for: level@8.0.0 want: ^1.2.0
+202 silly fetch manifest abstract-level@^1.0.2
+203 silly fetch manifest catering@^2.1.1
+204 silly fetch manifest module-error@^1.0.2
+205 silly fetch manifest run-parallel-limit@^1.1.0
+206 silly fetch manifest catering@^2.1.0
+207 silly fetch manifest module-error@^1.0.1
+208 silly fetch manifest napi-macros@^2.2.2
+209 silly fetch manifest node-gyp-build@^4.3.0
+210 http fetch GET 200 https://registry.npmjs.org/node-gyp-build 82ms (cache revalidated)
+211 http fetch GET 200 https://registry.npmjs.org/run-parallel-limit 278ms (cache revalidated)
+212 http fetch GET 200 https://registry.npmjs.org/catering 830ms (cache revalidated)
+213 http fetch GET 200 https://registry.npmjs.org/module-error 837ms (cache revalidated)
+214 http fetch GET 200 https://registry.npmjs.org/module-error 860ms (cache revalidated)
+215 http fetch GET 200 https://registry.npmjs.org/catering 864ms (cache revalidated)
+216 http fetch GET 200 https://registry.npmjs.org/napi-macros 872ms (cache revalidated)
+217 http fetch GET 200 https://registry.npmjs.org/abstract-level 884ms (cache revalidated)
+218 timing idealTree:node_modules/level Completed in 891ms
+219 silly placeDep ROOT abstract-level@1.0.3 OK for: browser-level@1.0.1 want: ^1.0.2
+220 silly placeDep ROOT catering@2.1.1 OK for: browser-level@1.0.1 want: ^2.1.1
+221 silly placeDep ROOT module-error@1.0.2 OK for: browser-level@1.0.1 want: ^1.0.2
+222 silly placeDep ROOT run-parallel-limit@1.1.0 OK for: browser-level@1.0.1 want: ^1.1.0
+223 silly fetch manifest buffer@^6.0.3
+224 silly fetch manifest is-buffer@^2.0.5
+225 silly fetch manifest level-supports@^4.0.0
+226 silly fetch manifest level-transcoder@^1.0.1
+227 silly fetch manifest queue-microtask@^1.2.3
+228 silly fetch manifest queue-microtask@^1.2.2
+229 http fetch GET 200 https://registry.npmjs.org/queue-microtask 72ms (cache revalidated)
+230 http fetch GET 200 https://registry.npmjs.org/queue-microtask 75ms (cache revalidated)
+231 http fetch GET 200 https://registry.npmjs.org/is-buffer 79ms (cache revalidated)
+232 http fetch GET 200 https://registry.npmjs.org/buffer 84ms (cache revalidated)
+233 http fetch GET 200 https://registry.npmjs.org/level-transcoder 276ms (cache revalidated)
+234 http fetch GET 200 https://registry.npmjs.org/level-supports 858ms (cache revalidated)
+235 timing idealTree:node_modules/browser-level Completed in 872ms
+236 silly placeDep ROOT buffer@6.0.3 OK for: abstract-level@1.0.3 want: ^6.0.3
+237 silly placeDep ROOT is-buffer@2.0.5 OK for: abstract-level@1.0.3 want: ^2.0.5
+238 silly placeDep ROOT level-supports@4.0.1 OK for: abstract-level@1.0.3 want: ^4.0.0
+239 silly placeDep ROOT level-transcoder@1.0.1 OK for: abstract-level@1.0.3 want: ^1.0.1
+240 silly placeDep ROOT queue-microtask@1.2.3 OK for: abstract-level@1.0.3 want: ^1.2.3
+241 silly fetch manifest base64-js@^1.3.1
+242 silly fetch manifest ieee754@^1.2.1
+243 http fetch GET 200 https://registry.npmjs.org/base64-js 56ms (cache revalidated)
+244 timing idealTree:node_modules/abstract-level Completed in 67ms
+245 silly placeDep ROOT base64-js@1.5.1 OK for: buffer@6.0.3 want: ^1.3.1
+246 silly placeDep ROOT ieee754@1.2.1 OK for: buffer@6.0.3 want: ^1.2.1
+247 timing idealTree:node_modules/buffer Completed in 2ms
+248 timing idealTree:node_modules/base64-js Completed in 0ms
+249 timing idealTree:node_modules/catering Completed in 0ms
+250 silly placeDep ROOT napi-macros@2.2.2 OK for: classic-level@1.3.0 want: ^2.2.2
+251 silly placeDep ROOT node-gyp-build@4.6.0 OK for: classic-level@1.3.0 want: ^4.3.0
+252 timing idealTree:node_modules/classic-level Completed in 5ms
+253 timing idealTree:node_modules/ieee754 Completed in 0ms
+254 timing idealTree:node_modules/is-buffer Completed in 0ms
+255 timing idealTree:node_modules/level-supports Completed in 0ms
+256 timing idealTree:node_modules/level-transcoder Completed in 0ms
+257 timing idealTree:node_modules/module-error Completed in 0ms
+258 silly placeDep ROOT @aws-sdk/credential-providers@3.342.0 OK for: mongodb@4.16.0 want: ^3.186.0
+259 silly placeDep ROOT bson@4.7.2 OK for: mongodb@4.16.0 want: ^4.7.2
+260 silly placeDep ROOT mongodb-connection-string-url@2.6.0 OK for: mongodb@4.16.0 want: ^2.5.4
+261 silly placeDep ROOT saslprep@1.0.3 OK for: mongodb@4.16.0 want: ^1.0.3
+262 silly placeDep ROOT socks@2.7.1 OK for: mongodb@4.16.0 want: ^2.7.1
+263 silly fetch manifest @aws-sdk/client-cognito-identity@3.342.0
+264 silly fetch manifest @aws-sdk/client-sso@3.342.0
+265 silly fetch manifest @aws-sdk/client-sts@3.342.0
+266 silly fetch manifest @aws-sdk/credential-provider-cognito-identity@3.342.0
+267 silly fetch manifest @aws-sdk/credential-provider-env@3.342.0
+268 silly fetch manifest @aws-sdk/credential-provider-imds@3.342.0
+269 silly fetch manifest @aws-sdk/credential-provider-ini@3.342.0
+270 silly fetch manifest @aws-sdk/credential-provider-node@3.342.0
+271 silly fetch manifest @aws-sdk/credential-provider-process@3.342.0
+272 silly fetch manifest @aws-sdk/credential-provider-sso@3.342.0
+273 silly fetch manifest @aws-sdk/credential-provider-web-identity@3.342.0
+274 silly fetch manifest @aws-sdk/property-provider@3.342.0
+275 silly fetch manifest @aws-sdk/types@3.342.0
+276 silly fetch manifest tslib@^2.5.0
+277 silly fetch manifest buffer@^5.6.0
+278 silly fetch manifest @types/whatwg-url@^8.2.1
+279 silly fetch manifest whatwg-url@^11.0.0
+280 silly fetch manifest sparse-bitfield@^3.0.3
+281 silly fetch manifest ip@^2.0.0
+282 silly fetch manifest smart-buffer@^4.2.0
+283 http fetch GET 200 https://registry.npmjs.org/smart-buffer 150ms (cache revalidated)
+284 http fetch GET 200 https://registry.npmjs.org/ip 164ms (cache revalidated)
+285 http fetch GET 200 https://registry.npmjs.org/tslib 334ms (cache updated)
+286 http fetch GET 200 https://registry.npmjs.org/whatwg-url 343ms (cache updated)
+287 http fetch GET 200 https://registry.npmjs.org/sparse-bitfield 1179ms (cache revalidated)
+288 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-process 1470ms (cache updated)
+289 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-node 1474ms (cache updated)
+290 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fproperty-provider 1498ms (cache updated)
+291 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-sso 1616ms (cache updated)
+292 http fetch GET 200 https://registry.npmjs.org/@types%2fwhatwg-url 1998ms (cache updated)
+293 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-web-identity 2152ms (cache updated)
+294 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2ftypes 2205ms (cache updated)
+295 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-imds 2250ms (cache updated)
+296 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-env 2265ms (cache updated)
+297 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-ini 2273ms (cache updated)
+298 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fclient-cognito-identity 2595ms (cache updated)
+299 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fclient-sts 2638ms (cache updated)
+300 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fclient-sso 2661ms (cache updated)
+301 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fcredential-provider-cognito-identity 2674ms (cache updated)
+302 timing idealTree:node_modules/mongodb Completed in 2695ms
+303 silly placeDep ROOT @aws-sdk/client-cognito-identity@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+304 silly placeDep ROOT @aws-sdk/client-sso@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+305 silly placeDep ROOT @aws-sdk/client-sts@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+306 silly placeDep ROOT @aws-sdk/credential-provider-cognito-identity@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+307 silly placeDep ROOT @aws-sdk/credential-provider-env@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+308 silly placeDep ROOT @aws-sdk/credential-provider-imds@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+309 silly placeDep ROOT @aws-sdk/credential-provider-ini@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+310 silly placeDep ROOT @aws-sdk/credential-provider-node@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+311 silly placeDep ROOT @aws-sdk/credential-provider-process@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+312 silly placeDep ROOT @aws-sdk/credential-provider-sso@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+313 silly placeDep ROOT @aws-sdk/credential-provider-web-identity@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+314 silly placeDep ROOT @aws-sdk/property-provider@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+315 silly placeDep ROOT @aws-sdk/types@3.342.0 OK for: @aws-sdk/credential-providers@3.342.0 want: 3.342.0
+316 silly placeDep ROOT tslib@2.5.2 OK for: @aws-sdk/credential-providers@3.342.0 want: ^2.5.0
+317 silly fetch manifest @aws-crypto/sha256-browser@3.0.0
+318 silly fetch manifest @aws-crypto/sha256-js@3.0.0
+319 silly fetch manifest @aws-sdk/config-resolver@3.342.0
+320 silly fetch manifest @aws-sdk/fetch-http-handler@3.342.0
+321 silly fetch manifest @aws-sdk/hash-node@3.342.0
+322 silly fetch manifest @aws-sdk/invalid-dependency@3.342.0
+323 silly fetch manifest @aws-sdk/middleware-content-length@3.342.0
+324 silly fetch manifest @aws-sdk/middleware-endpoint@3.342.0
+325 silly fetch manifest @aws-sdk/middleware-host-header@3.342.0
+326 silly fetch manifest @aws-sdk/middleware-logger@3.342.0
+327 silly fetch manifest @aws-sdk/middleware-recursion-detection@3.342.0
+328 silly fetch manifest @aws-sdk/middleware-retry@3.342.0
+329 silly fetch manifest @aws-sdk/middleware-serde@3.342.0
+330 silly fetch manifest @aws-sdk/middleware-signing@3.342.0
+331 silly fetch manifest @aws-sdk/middleware-stack@3.342.0
+332 silly fetch manifest @aws-sdk/middleware-user-agent@3.342.0
+333 silly fetch manifest @aws-sdk/node-config-provider@3.342.0
+334 silly fetch manifest @aws-sdk/node-http-handler@3.342.0
+335 silly fetch manifest @aws-sdk/smithy-client@3.342.0
+336 silly fetch manifest @aws-sdk/url-parser@3.342.0
+337 silly fetch manifest @aws-sdk/util-base64@3.310.0
+338 silly fetch manifest @aws-sdk/util-body-length-browser@3.310.0
+339 silly fetch manifest @aws-sdk/util-body-length-node@3.310.0
+340 silly fetch manifest @aws-sdk/util-defaults-mode-browser@3.342.0
+341 silly fetch manifest @aws-sdk/util-defaults-mode-node@3.342.0
+342 silly fetch manifest @aws-sdk/util-endpoints@3.342.0
+343 silly fetch manifest @aws-sdk/util-retry@3.342.0
+344 silly fetch manifest @aws-sdk/util-user-agent-browser@3.342.0
+345 silly fetch manifest @aws-sdk/util-user-agent-node@3.342.0
+346 silly fetch manifest @aws-sdk/util-utf8@3.310.0
+347 silly fetch manifest @smithy/protocol-http@^1.0.1
+348 silly fetch manifest @smithy/types@^1.0.0
+349 silly fetch manifest @aws-sdk/middleware-sdk-sts@3.342.0
+350 silly fetch manifest fast-xml-parser@4.1.2
+351 silly fetch manifest @aws-sdk/shared-ini-file-loader@3.342.0
+352 silly fetch manifest @aws-sdk/token-providers@3.342.0
+353 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2fsha256-browser 877ms (cache revalidated)
+354 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-content-length 930ms (cache updated)
+355 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-serde 931ms (cache updated)
+356 http fetch GET 200 https://registry.npmjs.org/@smithy%2ftypes 1304ms (cache miss)
+357 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-recursion-detection 1513ms (cache updated)
+358 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fnode-http-handler 1541ms (cache updated)
+359 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-retry 1555ms (cache updated)
+360 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-stack 1623ms (cache updated)
+361 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fsmithy-client 1632ms (cache updated)
+362 http fetch GET 200 https://registry.npmjs.org/@smithy%2fprotocol-http 1886ms (cache miss)
+363 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2fsha256-js 2018ms (cache revalidated)
+364 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-endpoint 2061ms (cache updated)
+365 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2finvalid-dependency 2130ms (cache updated)
+366 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-host-header 2252ms (cache updated)
+367 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2ffetch-http-handler 2336ms (cache updated)
+368 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fconfig-resolver 2343ms (cache updated)
+369 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2furl-parser 2347ms (cache updated)
+370 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-signing 2370ms (cache updated)
+371 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-user-agent 2385ms (cache updated)
+372 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-body-length-browser 3155ms (cache revalidated)
+373 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fnode-config-provider 3160ms (cache updated)
+374 http fetch GET 200 https://registry.npmjs.org/fast-xml-parser 3136ms (cache revalidated)
+375 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-user-agent-browser 3245ms (cache updated)
+376 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-body-length-node 3334ms (cache revalidated)
+377 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-defaults-mode-browser 3364ms (cache updated)
+378 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-logger 3427ms (cache updated)
+379 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-base64 3429ms (cache revalidated)
+380 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-retry 3525ms (cache updated)
+381 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-defaults-mode-node 3546ms (cache updated)
+382 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-utf8 3550ms (cache revalidated)
+383 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fhash-node 3629ms (cache updated)
+384 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2ftoken-providers 3840ms (cache updated)
+385 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-user-agent-node 3887ms (cache updated)
+386 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-endpoints 4160ms (cache updated)
+387 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fmiddleware-sdk-sts 4162ms (cache updated)
+388 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fshared-ini-file-loader 4405ms (cache updated)
+389 timing idealTree:node_modules/@aws-sdk/credential-providers Completed in 4489ms
+390 silly fetch manifest aws-crt@>=1.0.0
+391 http fetch GET 200 https://registry.npmjs.org/aws-crt 316ms (cache updated)
+392 silly placeDep ROOT @aws-crypto/sha256-browser@3.0.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.0.0
+393 silly placeDep ROOT @aws-crypto/sha256-js@3.0.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.0.0
+394 silly placeDep ROOT @aws-sdk/config-resolver@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+395 silly placeDep ROOT @aws-sdk/fetch-http-handler@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+396 silly placeDep ROOT @aws-sdk/hash-node@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+397 silly placeDep ROOT @aws-sdk/invalid-dependency@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+398 silly placeDep ROOT @aws-sdk/middleware-content-length@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+399 silly placeDep ROOT @aws-sdk/middleware-endpoint@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+400 silly placeDep ROOT @aws-sdk/middleware-host-header@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+401 silly placeDep ROOT @aws-sdk/middleware-logger@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+402 silly placeDep ROOT @aws-sdk/middleware-recursion-detection@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+403 silly placeDep ROOT @aws-sdk/middleware-retry@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+404 silly placeDep ROOT @aws-sdk/middleware-serde@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+405 silly placeDep ROOT @aws-sdk/middleware-signing@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+406 silly placeDep ROOT @aws-sdk/middleware-stack@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+407 silly placeDep ROOT @aws-sdk/middleware-user-agent@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+408 silly placeDep ROOT @aws-sdk/node-config-provider@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+409 silly placeDep ROOT @aws-sdk/node-http-handler@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+410 silly placeDep ROOT @aws-sdk/smithy-client@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+411 silly placeDep ROOT @aws-sdk/url-parser@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+412 silly placeDep ROOT @aws-sdk/util-base64@3.310.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.310.0
+413 silly placeDep ROOT @aws-sdk/util-body-length-browser@3.310.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.310.0
+414 silly placeDep ROOT @aws-sdk/util-body-length-node@3.310.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.310.0
+415 silly placeDep ROOT @aws-sdk/util-defaults-mode-browser@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+416 silly placeDep ROOT @aws-sdk/util-defaults-mode-node@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+417 silly placeDep ROOT @aws-sdk/util-endpoints@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+418 silly placeDep ROOT @aws-sdk/util-retry@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+419 silly placeDep ROOT @aws-sdk/util-user-agent-browser@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+420 silly placeDep ROOT @aws-sdk/util-user-agent-node@3.342.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.342.0
+421 silly placeDep ROOT @aws-sdk/util-utf8@3.310.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: 3.310.0
+422 silly placeDep ROOT @smithy/protocol-http@1.0.1 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: ^1.0.1
+423 silly placeDep ROOT @smithy/types@1.0.0 OK for: @aws-sdk/client-cognito-identity@3.342.0 want: ^1.0.0
+424 silly fetch manifest @aws-crypto/ie11-detection@^3.0.0
+425 silly fetch manifest @aws-crypto/supports-web-crypto@^3.0.0
+426 silly fetch manifest @aws-crypto/util@^3.0.0
+427 silly fetch manifest @aws-sdk/util-locate-window@^3.0.0
+428 silly fetch manifest @aws-sdk/util-utf8-browser@^3.0.0
+429 silly fetch manifest tslib@^1.11.1
+430 silly fetch manifest @aws-sdk/util-config-provider@3.310.0
+431 silly fetch manifest @aws-sdk/util-middleware@3.342.0
+432 silly fetch manifest @aws-sdk/protocol-http@3.342.0
+433 silly fetch manifest @aws-sdk/querystring-builder@3.342.0
+434 silly fetch manifest @aws-sdk/util-buffer-from@3.310.0
+435 silly fetch manifest @aws-sdk/service-error-classification@3.342.0
+436 silly fetch manifest @aws-sdk/signature-v4@3.342.0
+437 silly fetch manifest @aws-sdk/abort-controller@3.342.0
+438 silly fetch manifest @aws-sdk/querystring-parser@3.342.0
+439 silly fetch manifest bowser@^2.11.0
+440 http fetch GET 200 https://registry.npmjs.org/bowser 316ms (cache revalidated)
+441 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fabort-controller 746ms (cache updated)
+442 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fquerystring-parser 845ms (cache updated)
+443 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-config-provider 1272ms (cache revalidated)
+444 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-buffer-from 1283ms (cache revalidated)
+445 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2futil 1303ms (cache revalidated)
+446 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2fie11-detection 1309ms (cache revalidated)
+447 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2fsupports-web-crypto 1322ms (cache revalidated)
+448 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fprotocol-http 1321ms (cache updated)
+449 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fservice-error-classification 1429ms (cache updated)
+450 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-middleware 1434ms (cache updated)
+451 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-locate-window 1860ms (cache revalidated)
+452 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fquerystring-builder 1885ms (cache updated)
+453 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-utf8-browser 1899ms (cache revalidated)
+454 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fsignature-v4 1970ms (cache updated)
+455 timing idealTree:node_modules/@aws-sdk/client-cognito-identity Completed in 2397ms
+456 silly placeDep ROOT @aws-crypto/ie11-detection@3.0.0 OK for: @aws-crypto/sha256-browser@3.0.0 want: ^3.0.0
+457 silly placeDep ROOT @aws-crypto/supports-web-crypto@3.0.0 OK for: @aws-crypto/sha256-browser@3.0.0 want: ^3.0.0
+458 silly placeDep ROOT @aws-crypto/util@3.0.0 OK for: @aws-crypto/sha256-browser@3.0.0 want: ^3.0.0
+459 silly placeDep ROOT @aws-sdk/util-locate-window@3.310.0 OK for: @aws-crypto/sha256-browser@3.0.0 want: ^3.0.0
+460 silly placeDep ROOT @aws-sdk/util-utf8-browser@3.259.0 OK for: @aws-crypto/sha256-browser@3.0.0 want: ^3.0.0
+461 silly placeDep node_modules/@aws-crypto/sha256-browser tslib@1.14.1 OK for: @aws-crypto/sha256-browser@3.0.0 want: ^1.11.1
+462 timing idealTree:node_modules/@aws-crypto/sha256-browser Completed in 12ms
+463 silly placeDep node_modules/@aws-crypto/ie11-detection tslib@1.14.1 OK for: @aws-crypto/ie11-detection@3.0.0 want: ^1.11.1
+464 timing idealTree:node_modules/@aws-crypto/ie11-detection Completed in 2ms
+465 silly placeDep node_modules/@aws-crypto/sha256-js tslib@1.14.1 OK for: @aws-crypto/sha256-js@3.0.0 want: ^1.11.1
+466 timing idealTree:node_modules/@aws-crypto/sha256-js Completed in 1ms
+467 silly placeDep node_modules/@aws-crypto/supports-web-crypto tslib@1.14.1 OK for: @aws-crypto/supports-web-crypto@3.0.0 want: ^1.11.1
+468 timing idealTree:node_modules/@aws-crypto/supports-web-crypto Completed in 1ms
+469 silly placeDep node_modules/@aws-crypto/util tslib@1.14.1 OK for: @aws-crypto/util@3.0.0 want: ^1.11.1
+470 timing idealTree:node_modules/@aws-crypto/util Completed in 1ms
+471 timing idealTree:node_modules/@aws-sdk/client-sso Completed in 0ms
+472 silly placeDep ROOT @aws-sdk/middleware-sdk-sts@3.342.0 OK for: @aws-sdk/client-sts@3.342.0 want: 3.342.0
+473 silly placeDep ROOT fast-xml-parser@4.1.2 OK for: @aws-sdk/client-sts@3.342.0 want: 4.1.2
+474 silly fetch manifest strnum@^1.0.5
+475 http fetch GET 200 https://registry.npmjs.org/strnum 845ms (cache revalidated)
+476 timing idealTree:node_modules/@aws-sdk/client-sts Completed in 849ms
+477 silly placeDep ROOT @aws-sdk/util-config-provider@3.310.0 OK for: @aws-sdk/config-resolver@3.342.0 want: 3.310.0
+478 silly placeDep ROOT @aws-sdk/util-middleware@3.342.0 OK for: @aws-sdk/config-resolver@3.342.0 want: 3.342.0
+479 timing idealTree:node_modules/@aws-sdk/config-resolver Completed in 3ms
+480 timing idealTree:node_modules/@aws-sdk/credential-provider-cognito-identity Completed in 0ms
+481 timing idealTree:node_modules/@aws-sdk/credential-provider-env Completed in 0ms
+482 timing idealTree:node_modules/@aws-sdk/credential-provider-imds Completed in 0ms
+483 silly placeDep ROOT @aws-sdk/shared-ini-file-loader@3.342.0 OK for: @aws-sdk/credential-provider-ini@3.342.0 want: 3.342.0
+484 timing idealTree:node_modules/@aws-sdk/credential-provider-ini Completed in 1ms
+485 timing idealTree:node_modules/@aws-sdk/credential-provider-node Completed in 0ms
+486 timing idealTree:node_modules/@aws-sdk/credential-provider-process Completed in 0ms
+487 silly placeDep ROOT @aws-sdk/token-providers@3.342.0 OK for: @aws-sdk/credential-provider-sso@3.342.0 want: 3.342.0
+488 silly fetch manifest @aws-sdk/client-sso-oidc@3.342.0
+489 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fclient-sso-oidc 1345ms (cache updated)
+490 timing idealTree:node_modules/@aws-sdk/credential-provider-sso Completed in 1353ms
+491 timing idealTree:node_modules/@aws-sdk/credential-provider-web-identity Completed in 0ms
+492 silly placeDep ROOT @aws-sdk/protocol-http@3.342.0 OK for: @aws-sdk/fetch-http-handler@3.342.0 want: 3.342.0
+493 silly placeDep ROOT @aws-sdk/querystring-builder@3.342.0 OK for: @aws-sdk/fetch-http-handler@3.342.0 want: 3.342.0
+494 silly fetch manifest @aws-sdk/util-uri-escape@3.310.0
+495 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-uri-escape 686ms (cache revalidated)
+496 timing idealTree:node_modules/@aws-sdk/fetch-http-handler Completed in 692ms
+497 silly placeDep ROOT @aws-sdk/util-buffer-from@3.310.0 OK for: @aws-sdk/hash-node@3.342.0 want: 3.310.0
+498 silly fetch manifest @aws-sdk/is-array-buffer@3.310.0
+499 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2fis-array-buffer 1814ms (cache revalidated)
+500 timing idealTree:node_modules/@aws-sdk/hash-node Completed in 1816ms
+501 timing idealTree:node_modules/@aws-sdk/invalid-dependency Completed in 0ms
+502 timing idealTree:node_modules/@aws-sdk/middleware-content-length Completed in 0ms
+503 timing idealTree:node_modules/@aws-sdk/middleware-endpoint Completed in 0ms
+504 timing idealTree:node_modules/@aws-sdk/middleware-host-header Completed in 0ms
+505 timing idealTree:node_modules/@aws-sdk/middleware-logger Completed in 0ms
+506 timing idealTree:node_modules/@aws-sdk/middleware-recursion-detection Completed in 0ms
+507 silly placeDep ROOT @aws-sdk/service-error-classification@3.342.0 OK for: @aws-sdk/middleware-retry@3.342.0 want: 3.342.0
+508 silly placeDep node_modules/@aws-sdk/middleware-retry uuid@8.3.2 OK for: @aws-sdk/middleware-retry@3.342.0 want: ^8.3.2
+509 timing idealTree:node_modules/@aws-sdk/middleware-retry Completed in 2ms
+510 timing idealTree:node_modules/@aws-sdk/middleware-sdk-sts Completed in 0ms
+511 timing idealTree:node_modules/@aws-sdk/middleware-serde Completed in 0ms
+512 silly placeDep ROOT @aws-sdk/signature-v4@3.342.0 OK for: @aws-sdk/middleware-signing@3.342.0 want: 3.342.0
+513 silly fetch manifest @aws-sdk/eventstream-codec@3.342.0
+514 silly fetch manifest @aws-sdk/util-hex-encoding@3.310.0
+515 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-hex-encoding 1273ms (cache revalidated)
+516 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2feventstream-codec 1850ms (cache miss)
+517 timing idealTree:node_modules/@aws-sdk/middleware-signing Completed in 1854ms
+518 timing idealTree:node_modules/@aws-sdk/middleware-stack Completed in 0ms
+519 timing idealTree:node_modules/@aws-sdk/middleware-user-agent Completed in 0ms
+520 timing idealTree:node_modules/@aws-sdk/node-config-provider Completed in 0ms
+521 silly placeDep ROOT @aws-sdk/abort-controller@3.342.0 OK for: @aws-sdk/node-http-handler@3.342.0 want: 3.342.0
+522 timing idealTree:node_modules/@aws-sdk/node-http-handler Completed in 6ms
+523 timing idealTree:node_modules/@aws-sdk/abort-controller Completed in 0ms
+524 timing idealTree:node_modules/@aws-sdk/property-provider Completed in 0ms
+525 timing idealTree:node_modules/@aws-sdk/protocol-http Completed in 0ms
+526 silly placeDep ROOT @aws-sdk/util-uri-escape@3.310.0 OK for: @aws-sdk/querystring-builder@3.342.0 want: 3.310.0
+527 timing idealTree:node_modules/@aws-sdk/querystring-builder Completed in 2ms
+528 timing idealTree:node_modules/@aws-sdk/service-error-classification Completed in 0ms
+529 timing idealTree:node_modules/@aws-sdk/shared-ini-file-loader Completed in 0ms
+530 silly placeDep ROOT @aws-sdk/eventstream-codec@3.342.0 OK for: @aws-sdk/signature-v4@3.342.0 want: 3.342.0
+531 silly placeDep ROOT @aws-sdk/is-array-buffer@3.310.0 OK for: @aws-sdk/signature-v4@3.342.0 want: 3.310.0
+532 silly placeDep ROOT @aws-sdk/util-hex-encoding@3.310.0 OK for: @aws-sdk/signature-v4@3.342.0 want: 3.310.0
+533 silly fetch manifest @aws-crypto/crc32@3.0.0
+534 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2fcrc32 1809ms (cache miss)
+535 timing idealTree:node_modules/@aws-sdk/signature-v4 Completed in 1816ms
+536 silly placeDep ROOT @aws-crypto/crc32@3.0.0 OK for: @aws-sdk/eventstream-codec@3.342.0 want: 3.0.0
+537 timing idealTree:node_modules/@aws-sdk/eventstream-codec Completed in 3ms
+538 silly placeDep node_modules/@aws-crypto/crc32 tslib@1.14.1 OK for: @aws-crypto/crc32@3.0.0 want: ^1.11.1
+539 timing idealTree:node_modules/@aws-crypto/crc32 Completed in 2ms
+540 timing idealTree:node_modules/@aws-sdk/is-array-buffer Completed in 0ms
+541 timing idealTree:node_modules/@aws-sdk/smithy-client Completed in 0ms
+542 silly placeDep ROOT @aws-sdk/client-sso-oidc@3.342.0 OK for: @aws-sdk/token-providers@3.342.0 want: 3.342.0
+543 timing idealTree:node_modules/@aws-sdk/token-providers Completed in 19ms
+544 timing idealTree:node_modules/@aws-sdk/client-sso-oidc Completed in 0ms
+545 timing idealTree:node_modules/@aws-sdk/types Completed in 0ms
+546 silly placeDep ROOT @aws-sdk/querystring-parser@3.342.0 OK for: @aws-sdk/url-parser@3.342.0 want: 3.342.0
+547 timing idealTree:node_modules/@aws-sdk/url-parser Completed in 4ms
+548 timing idealTree:node_modules/@aws-sdk/querystring-parser Completed in 0ms
+549 timing idealTree:node_modules/@aws-sdk/util-base64 Completed in 0ms
+550 timing idealTree:node_modules/@aws-sdk/util-body-length-browser Completed in 0ms
+551 timing idealTree:node_modules/@aws-sdk/util-body-length-node Completed in 0ms
+552 timing idealTree:node_modules/@aws-sdk/util-buffer-from Completed in 0ms
+553 timing idealTree:node_modules/@aws-sdk/util-config-provider Completed in 0ms
+554 silly placeDep ROOT bowser@2.11.0 OK for: @aws-sdk/util-defaults-mode-browser@3.342.0 want: ^2.11.0
+555 timing idealTree:node_modules/@aws-sdk/util-defaults-mode-browser Completed in 3ms
+556 timing idealTree:node_modules/@aws-sdk/util-defaults-mode-node Completed in 0ms
+557 timing idealTree:node_modules/@aws-sdk/util-endpoints Completed in 1ms
+558 timing idealTree:node_modules/@aws-sdk/util-hex-encoding Completed in 0ms
+559 timing idealTree:node_modules/@aws-sdk/util-locate-window Completed in 0ms
+560 timing idealTree:node_modules/@aws-sdk/util-middleware Completed in 0ms
+561 timing idealTree:node_modules/@aws-sdk/util-retry Completed in 0ms
+562 timing idealTree:node_modules/@aws-sdk/util-uri-escape Completed in 0ms
+563 timing idealTree:node_modules/@aws-sdk/util-user-agent-browser Completed in 0ms
+564 timing idealTree:node_modules/@aws-sdk/util-user-agent-node Completed in 0ms
+565 timing idealTree:node_modules/@aws-sdk/util-utf8 Completed in 0ms
+566 timing idealTree:node_modules/@aws-sdk/util-utf8-browser Completed in 0ms
+567 timing idealTree:node_modules/@smithy/protocol-http Completed in 0ms
+568 timing idealTree:node_modules/@smithy/types Completed in 0ms
+569 timing idealTree:node_modules/bowser Completed in 0ms
+570 silly placeDep node_modules/bson buffer@5.7.1 OK for: bson@4.7.2 want: ^5.6.0
+571 timing idealTree:node_modules/bson Completed in 9ms
+572 silly placeDep ROOT strnum@1.0.5 OK for: fast-xml-parser@4.1.2 want: ^1.0.5
+573 timing idealTree:node_modules/fast-xml-parser Completed in 3ms
+574 silly placeDep ROOT @types/whatwg-url@8.2.2 OK for: mongodb-connection-string-url@2.6.0 want: ^8.2.1
+575 silly placeDep ROOT whatwg-url@11.0.0 OK for: mongodb-connection-string-url@2.6.0 want: ^11.0.0
+576 silly fetch manifest @types/node@*
+577 silly fetch manifest @types/webidl-conversions@*
+578 silly fetch manifest tr46@^3.0.0
+579 silly fetch manifest webidl-conversions@^7.0.0
+580 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 73ms (cache revalidated)
+581 http fetch GET 200 https://registry.npmjs.org/tr46 95ms (cache revalidated)
+582 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 401ms (cache updated)
+583 http fetch GET 200 https://registry.npmjs.org/@types%2fwebidl-conversions 1641ms (cache updated)
+584 timing idealTree:node_modules/mongodb-connection-string-url Completed in 1646ms
+585 silly placeDep ROOT @types/node@20.2.5 OK for: @types/whatwg-url@8.2.2 want: *
+586 silly placeDep ROOT @types/webidl-conversions@7.0.0 OK for: @types/whatwg-url@8.2.2 want: *
+587 timing idealTree:node_modules/@types/whatwg-url Completed in 2ms
+588 timing idealTree:node_modules/@types/node Completed in 0ms
+589 timing idealTree:node_modules/@types/webidl-conversions Completed in 0ms
+590 timing idealTree:node_modules/mqemitter Completed in 0ms
+591 silly placeDep ROOT bl@5.1.0 OK for: mqtt-packet@8.1.2 want: ^5.0.0
+592 silly placeDep ROOT debug@4.3.4 OK for: mqtt-packet@8.1.2 want: ^4.1.1
+593 silly placeDep ROOT process-nextick-args@2.0.1 OK for: mqtt-packet@8.1.2 want: ^2.0.1
+594 silly fetch manifest inherits@^2.0.4
+595 silly fetch manifest readable-stream@^3.4.0
+596 silly fetch manifest ms@2.1.2
+597 http fetch GET 200 https://registry.npmjs.org/ms 69ms (cache updated)
+598 timing idealTree:node_modules/mqtt-packet Completed in 76ms
+599 silly placeDep ROOT inherits@2.0.4 OK for: bl@5.1.0 want: ^2.0.4
+600 silly placeDep ROOT readable-stream@3.6.2 OK for: bl@5.1.0 want: ^3.4.0
+601 silly fetch manifest string_decoder@^1.1.1
+602 silly fetch manifest util-deprecate@^1.0.1
+603 http fetch GET 200 https://registry.npmjs.org/util-deprecate 57ms (cache revalidated)
+604 http fetch GET 200 https://registry.npmjs.org/string_decoder 109ms (cache revalidated)
+605 timing idealTree:node_modules/bl Completed in 115ms
+606 silly placeDep ROOT ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+607 timing idealTree:node_modules/debug Completed in 1ms
+608 timing idealTree:node_modules/inherits Completed in 0ms
+609 timing idealTree:node_modules/ms Completed in 0ms
+610 silly placeDep ROOT event-lite@0.1.3 OK for: msgpack-lite@0.1.26 want: ^0.1.1
+611 silly placeDep ROOT int64-buffer@0.1.10 OK for: msgpack-lite@0.1.26 want: ^0.1.9
+612 silly placeDep ROOT isarray@1.0.0 OK for: msgpack-lite@0.1.26 want: ^1.0.0
+613 timing idealTree:node_modules/msgpack-lite Completed in 5ms
+614 timing idealTree:node_modules/event-lite Completed in 0ms
+615 timing idealTree:node_modules/int64-buffer Completed in 0ms
+616 timing idealTree:node_modules/isarray Completed in 0ms
+617 timing idealTree:node_modules/multistream Completed in 0ms
+618 timing idealTree:node_modules/napi-macros Completed in 0ms
+619 silly placeDep ROOT querystring@0.2.1 OK for: native-url@0.3.4 want: ^0.2.0
+620 timing idealTree:node_modules/native-url Completed in 1ms
+621 timing idealTree:node_modules/node-gyp-build Completed in 0ms
+622 silly placeDep ROOT wrappy@1.0.2 OK for: once@1.4.0 want: 1
+623 timing idealTree:node_modules/once Completed in 1ms
+624 timing idealTree:node_modules/process-nextick-args Completed in 0ms
+625 timing idealTree:node_modules/pump Completed in 0ms
+626 timing idealTree:node_modules/qlobber Completed in 0ms
+627 timing idealTree:node_modules/querystring Completed in 0ms
+628 timing idealTree:node_modules/queue-microtask Completed in 0ms
+629 silly placeDep ROOT string_decoder@1.3.0 OK for: readable-stream@3.6.2 want: ^1.1.1
+630 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@3.6.2 want: ^1.0.1
+631 silly fetch manifest safe-buffer@~5.2.0
+632 timing idealTree:node_modules/readable-stream Completed in 6ms
+633 timing idealTree:node_modules/retimer Completed in 0ms
+634 timing idealTree:node_modules/reusify Completed in 0ms
+635 timing idealTree:node_modules/run-parallel-limit Completed in 0ms
+636 silly placeDep ROOT sparse-bitfield@3.0.3 OK for: saslprep@1.0.3 want: ^3.0.3
+637 silly fetch manifest memory-pager@^1.0.2
+638 http fetch GET 200 https://registry.npmjs.org/memory-pager 838ms (cache revalidated)
+639 timing idealTree:node_modules/saslprep Completed in 842ms
+640 silly placeDep ROOT ip@2.0.0 OK for: socks@2.7.1 want: ^2.0.0
+641 silly placeDep ROOT smart-buffer@4.2.0 OK for: socks@2.7.1 want: ^4.2.0
+642 timing idealTree:node_modules/socks Completed in 2ms
+643 timing idealTree:node_modules/ip Completed in 0ms
+644 timing idealTree:node_modules/smart-buffer Completed in 0ms
+645 silly placeDep ROOT memory-pager@1.5.0 OK for: sparse-bitfield@3.0.3 want: ^1.0.2
+646 timing idealTree:node_modules/sparse-bitfield Completed in 1ms
+647 timing idealTree:node_modules/memory-pager Completed in 0ms
+648 silly placeDep ROOT safe-buffer@5.2.1 OK for: string_decoder@1.3.0 want: ~5.2.0
+649 timing idealTree:node_modules/string_decoder Completed in 1ms
+650 timing idealTree:node_modules/safe-buffer Completed in 0ms
+651 timing idealTree:node_modules/strnum Completed in 0ms
+652 timing idealTree:node_modules/through2 Completed in 0ms
+653 timing idealTree:node_modules/tslib Completed in 0ms
+654 timing idealTree:node_modules/util-deprecate Completed in 0ms
+655 timing idealTree:node_modules/uuid Completed in 0ms
+656 timing idealTree:node_modules/uuid-parse Completed in 10ms
+657 silly placeDep ROOT duplexify@3.7.1 OK for: websocket-stream@5.5.2 want: ^3.5.1
+658 silly placeDep node_modules/websocket-stream readable-stream@2.3.8 OK for: websocket-stream@5.5.2 want: ^2.3.3
+659 silly placeDep ROOT ws@3.3.3 OK for: websocket-stream@5.5.2 want: ^3.2.0
+660 silly fetch manifest readable-stream@^2.0.0
+661 silly fetch manifest stream-shift@^1.0.0
+662 silly fetch manifest core-util-is@~1.0.0
+663 silly fetch manifest safe-buffer@~5.1.1
+664 silly fetch manifest string_decoder@~1.1.1
+665 silly fetch manifest async-limiter@~1.0.0
+666 silly fetch manifest safe-buffer@~5.1.0
+667 silly fetch manifest ultron@~1.1.0
+668 http fetch GET 200 https://registry.npmjs.org/ultron 78ms (cache revalidated)
+669 http fetch GET 200 https://registry.npmjs.org/core-util-is 97ms (cache revalidated)
+670 http fetch GET 200 https://registry.npmjs.org/stream-shift 111ms (cache revalidated)
+671 http fetch GET 200 https://registry.npmjs.org/async-limiter 859ms (cache revalidated)
+672 timing idealTree:node_modules/websocket-stream Completed in 867ms
+673 silly placeDep node_modules/duplexify readable-stream@2.3.8 OK for: duplexify@3.7.1 want: ^2.0.0
+674 silly placeDep ROOT stream-shift@1.0.1 OK for: duplexify@3.7.1 want: ^1.0.0
+675 timing idealTree:node_modules/duplexify Completed in 3ms
+676 timing idealTree:node_modules/stream-shift Completed in 0ms
+677 silly placeDep ROOT tr46@3.0.0 OK for: whatwg-url@11.0.0 want: ^3.0.0
+678 silly placeDep ROOT webidl-conversions@7.0.0 OK for: whatwg-url@11.0.0 want: ^7.0.0
+679 silly fetch manifest punycode@^2.1.1
+680 http fetch GET 200 https://registry.npmjs.org/punycode 62ms (cache revalidated)
+681 timing idealTree:node_modules/whatwg-url Completed in 64ms
+682 silly placeDep ROOT punycode@2.3.0 OK for: tr46@3.0.0 want: ^2.1.1
+683 timing idealTree:node_modules/tr46 Completed in 3ms
+684 timing idealTree:node_modules/punycode Completed in 1ms
+685 timing idealTree:node_modules/webidl-conversions Completed in 0ms
+686 timing idealTree:node_modules/wrappy Completed in 0ms
+687 silly placeDep ROOT async-limiter@1.0.1 OK for: ws@3.3.3 want: ~1.0.0
+688 silly placeDep node_modules/ws safe-buffer@5.1.2 OK for: ws@3.3.3 want: ~5.1.0
+689 silly placeDep ROOT ultron@1.1.1 OK for: ws@3.3.3 want: ~1.1.0
+690 timing idealTree:node_modules/ws Completed in 5ms
+691 timing idealTree:node_modules/async-limiter Completed in 0ms
+692 timing idealTree:node_modules/ultron Completed in 0ms
+693 timing idealTree:node_modules/@aws-crypto/crc32/node_modules/tslib Completed in 0ms
+694 timing idealTree:node_modules/@aws-crypto/ie11-detection/node_modules/tslib Completed in 0ms
+695 timing idealTree:node_modules/@aws-crypto/sha256-browser/node_modules/tslib Completed in 0ms
+696 timing idealTree:node_modules/@aws-crypto/sha256-js/node_modules/tslib Completed in 0ms
+697 timing idealTree:node_modules/@aws-crypto/supports-web-crypto/node_modules/tslib Completed in 0ms
+698 timing idealTree:node_modules/@aws-crypto/util/node_modules/tslib Completed in 0ms
+699 timing idealTree:node_modules/@aws-sdk/middleware-retry/node_modules/uuid Completed in 0ms
+700 silly placeDep node_modules/aedes-packet bl@4.1.0 OK for: mqtt-packet@7.1.2 want: ^4.0.2
+701 silly fetch manifest buffer@^5.5.0
+702 timing idealTree:node_modules/aedes-packet/node_modules/mqtt-packet Completed in 4ms
+703 silly placeDep node_modules/aedes-packet buffer@5.7.1 OK for: bl@4.1.0 want: ^5.5.0
+704 timing idealTree:node_modules/aedes-packet/node_modules/bl Completed in 2ms
+705 timing idealTree:node_modules/aedes-packet/node_modules/buffer Completed in 0ms
+706 silly placeDep node_modules/aedes-persistence-level mqtt-packet@6.10.0 OK for: aedes-packet@2.3.1 want: ^6.3.0
+707 timing idealTree:node_modules/aedes-persistence-level/node_modules/aedes-packet Completed in 1ms
+708 silly placeDep node_modules/aedes-persistence-level bl@4.1.0 OK for: mqtt-packet@6.10.0 want: ^4.0.2
+709 timing idealTree:node_modules/aedes-persistence-level/node_modules/mqtt-packet Completed in 2ms
+710 silly placeDep node_modules/aedes-persistence-level buffer@5.7.1 OK for: bl@4.1.0 want: ^5.5.0
+711 timing idealTree:node_modules/aedes-persistence-level/node_modules/bl Completed in 1ms
+712 timing idealTree:node_modules/aedes-persistence-level/node_modules/buffer Completed in 0ms
+713 timing idealTree:node_modules/aedes-persistence-level/node_modules/qlobber Completed in 0ms
+714 timing idealTree:node_modules/bson/node_modules/buffer Completed in 0ms
+715 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+716 silly placeDep node_modules/duplexify safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+717 silly placeDep node_modules/duplexify string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+718 timing idealTree:node_modules/duplexify/node_modules/readable-stream Completed in 6ms
+719 timing idealTree:node_modules/core-util-is Completed in 0ms
+720 timing idealTree:node_modules/duplexify/node_modules/safe-buffer Completed in 1ms
+721 timing idealTree:node_modules/duplexify/node_modules/string_decoder Completed in 0ms
+722 timing idealTree:node_modules/hyperid/node_modules/uuid Completed in 0ms
+723 silly placeDep node_modules/websocket-stream safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+724 silly placeDep node_modules/websocket-stream string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+725 timing idealTree:node_modules/websocket-stream/node_modules/readable-stream Completed in 4ms
+726 timing idealTree:node_modules/websocket-stream/node_modules/safe-buffer Completed in 0ms
+727 timing idealTree:node_modules/websocket-stream/node_modules/string_decoder Completed in 0ms
+728 timing idealTree:node_modules/ws/node_modules/safe-buffer Completed in 0ms
+729 timing idealTree:buildDeps Completed in 31178ms
+730 timing idealTree:fixDepFlags Completed in 3ms
+731 timing idealTree Completed in 31255ms
+732 timing reify:loadTrees Completed in 31256ms
+733 timing reify:diffTrees Completed in 6ms
+734 silly reify moves {}
+735 timing reify:retireShallow Completed in 2ms
+736 timing reify:createSparse Completed in 175ms
+737 timing reify:trashOmits Completed in 0ms
+738 timing reify:loadBundles Completed in 0ms
+739 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-20.2.5.tgz. Extracting by manifest.
+740 silly tarball no local data for @aws-sdk/client-sso-oidc@https://registry.npmjs.org/@aws-sdk/client-sso-oidc/-/client-sso-oidc-3.342.0.tgz. Extracting by manifest.
+741 silly tarball no local data for @aws-sdk/eventstream-codec@https://registry.npmjs.org/@aws-sdk/eventstream-codec/-/eventstream-codec-3.342.0.tgz. Extracting by manifest.
+742 silly tarball no local data for @aws-crypto/crc32@https://registry.npmjs.org/@aws-crypto/crc32/-/crc32-3.0.0.tgz. Extracting by manifest.
+743 silly tarball no local data for @aws-sdk/querystring-parser@https://registry.npmjs.org/@aws-sdk/querystring-parser/-/querystring-parser-3.342.0.tgz. Extracting by manifest.
+744 silly tarball no local data for @aws-sdk/abort-controller@https://registry.npmjs.org/@aws-sdk/abort-controller/-/abort-controller-3.342.0.tgz. Extracting by manifest.
+745 silly tarball no local data for @aws-sdk/signature-v4@https://registry.npmjs.org/@aws-sdk/signature-v4/-/signature-v4-3.342.0.tgz. Extracting by manifest.
+746 silly tarball no local data for @aws-sdk/querystring-builder@https://registry.npmjs.org/@aws-sdk/querystring-builder/-/querystring-builder-3.342.0.tgz. Extracting by manifest.
+747 silly tarball no local data for @aws-sdk/protocol-http@https://registry.npmjs.org/@aws-sdk/protocol-http/-/protocol-http-3.342.0.tgz. Extracting by manifest.
+748 silly tarball no local data for @aws-sdk/token-providers@https://registry.npmjs.org/@aws-sdk/token-providers/-/token-providers-3.342.0.tgz. Extracting by manifest.
+749 silly tarball no local data for @aws-sdk/shared-ini-file-loader@https://registry.npmjs.org/@aws-sdk/shared-ini-file-loader/-/shared-ini-file-loader-3.342.0.tgz. Extracting by manifest.
+750 silly tarball no local data for @aws-sdk/service-error-classification@https://registry.npmjs.org/@aws-sdk/service-error-classification/-/service-error-classification-3.342.0.tgz. Extracting by manifest.
+751 silly tarball no local data for @aws-sdk/util-middleware@https://registry.npmjs.org/@aws-sdk/util-middleware/-/util-middleware-3.342.0.tgz. Extracting by manifest.
+752 silly tarball no local data for @aws-sdk/middleware-sdk-sts@https://registry.npmjs.org/@aws-sdk/middleware-sdk-sts/-/middleware-sdk-sts-3.342.0.tgz. Extracting by manifest.
+753 silly tarball no local data for @smithy/types@https://registry.npmjs.org/@smithy/types/-/types-1.0.0.tgz. Extracting by manifest.
+754 silly tarball no local data for @smithy/protocol-http@https://registry.npmjs.org/@smithy/protocol-http/-/protocol-http-1.0.1.tgz. Extracting by manifest.
+755 silly tarball no local data for @aws-sdk/util-user-agent-node@https://registry.npmjs.org/@aws-sdk/util-user-agent-node/-/util-user-agent-node-3.342.0.tgz. Extracting by manifest.
+756 silly tarball no local data for @aws-sdk/util-endpoints@https://registry.npmjs.org/@aws-sdk/util-endpoints/-/util-endpoints-3.342.0.tgz. Extracting by manifest.
+757 silly tarball no local data for @aws-sdk/util-retry@https://registry.npmjs.org/@aws-sdk/util-retry/-/util-retry-3.342.0.tgz. Extracting by manifest.
+758 silly tarball no local data for @aws-sdk/util-defaults-mode-browser@https://registry.npmjs.org/@aws-sdk/util-defaults-mode-browser/-/util-defaults-mode-browser-3.342.0.tgz. Extracting by manifest.
+759 silly tarball no local data for @aws-sdk/util-user-agent-browser@https://registry.npmjs.org/@aws-sdk/util-user-agent-browser/-/util-user-agent-browser-3.342.0.tgz. Extracting by manifest.
+760 silly tarball no local data for @aws-sdk/util-defaults-mode-node@https://registry.npmjs.org/@aws-sdk/util-defaults-mode-node/-/util-defaults-mode-node-3.342.0.tgz. Extracting by manifest.
+761 silly tarball no local data for @aws-sdk/smithy-client@https://registry.npmjs.org/@aws-sdk/smithy-client/-/smithy-client-3.342.0.tgz. Extracting by manifest.
+762 silly tarball no local data for @aws-sdk/url-parser@https://registry.npmjs.org/@aws-sdk/url-parser/-/url-parser-3.342.0.tgz. Extracting by manifest.
+763 silly tarball no local data for @aws-sdk/node-http-handler@https://registry.npmjs.org/@aws-sdk/node-http-handler/-/node-http-handler-3.342.0.tgz. Extracting by manifest.
+764 silly tarball no local data for @aws-sdk/node-config-provider@https://registry.npmjs.org/@aws-sdk/node-config-provider/-/node-config-provider-3.342.0.tgz. Extracting by manifest.
+765 silly tarball no local data for @aws-sdk/middleware-user-agent@https://registry.npmjs.org/@aws-sdk/middleware-user-agent/-/middleware-user-agent-3.342.0.tgz. Extracting by manifest.
+766 silly tarball no local data for @aws-sdk/middleware-stack@https://registry.npmjs.org/@aws-sdk/middleware-stack/-/middleware-stack-3.342.0.tgz. Extracting by manifest.
+767 silly tarball no local data for @aws-sdk/middleware-serde@https://registry.npmjs.org/@aws-sdk/middleware-serde/-/middleware-serde-3.342.0.tgz. Extracting by manifest.
+768 silly tarball no local data for @aws-sdk/middleware-recursion-detection@https://registry.npmjs.org/@aws-sdk/middleware-recursion-detection/-/middleware-recursion-detection-3.342.0.tgz. Extracting by manifest.
+769 silly tarball no local data for @aws-sdk/middleware-logger@https://registry.npmjs.org/@aws-sdk/middleware-logger/-/middleware-logger-3.342.0.tgz. Extracting by manifest.
+770 silly tarball no local data for @aws-sdk/middleware-host-header@https://registry.npmjs.org/@aws-sdk/middleware-host-header/-/middleware-host-header-3.342.0.tgz. Extracting by manifest.
+771 silly tarball no local data for @aws-sdk/middleware-signing@https://registry.npmjs.org/@aws-sdk/middleware-signing/-/middleware-signing-3.342.0.tgz. Extracting by manifest.
+772 silly tarball no local data for @aws-sdk/middleware-endpoint@https://registry.npmjs.org/@aws-sdk/middleware-endpoint/-/middleware-endpoint-3.342.0.tgz. Extracting by manifest.
+773 silly tarball no local data for @aws-sdk/middleware-content-length@https://registry.npmjs.org/@aws-sdk/middleware-content-length/-/middleware-content-length-3.342.0.tgz. Extracting by manifest.
+774 silly tarball no local data for @aws-sdk/invalid-dependency@https://registry.npmjs.org/@aws-sdk/invalid-dependency/-/invalid-dependency-3.342.0.tgz. Extracting by manifest.
+775 silly tarball no local data for @aws-sdk/fetch-http-handler@https://registry.npmjs.org/@aws-sdk/fetch-http-handler/-/fetch-http-handler-3.342.0.tgz. Extracting by manifest.
+776 silly tarball no local data for @aws-sdk/config-resolver@https://registry.npmjs.org/@aws-sdk/config-resolver/-/config-resolver-3.342.0.tgz. Extracting by manifest.
+777 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.5.2.tgz. Extracting by manifest.
+778 silly tarball no local data for @aws-sdk/middleware-retry@https://registry.npmjs.org/@aws-sdk/middleware-retry/-/middleware-retry-3.342.0.tgz. Extracting by manifest.
+779 silly tarball no local data for @aws-sdk/hash-node@https://registry.npmjs.org/@aws-sdk/hash-node/-/hash-node-3.342.0.tgz. Extracting by manifest.
+780 silly tarball no local data for @aws-sdk/property-provider@https://registry.npmjs.org/@aws-sdk/property-provider/-/property-provider-3.342.0.tgz. Extracting by manifest.
+781 silly tarball no local data for @aws-sdk/types@https://registry.npmjs.org/@aws-sdk/types/-/types-3.342.0.tgz. Extracting by manifest.
+782 silly tarball no local data for @aws-sdk/credential-provider-process@https://registry.npmjs.org/@aws-sdk/credential-provider-process/-/credential-provider-process-3.342.0.tgz. Extracting by manifest.
+783 silly tarball no local data for @aws-sdk/credential-provider-ini@https://registry.npmjs.org/@aws-sdk/credential-provider-ini/-/credential-provider-ini-3.342.0.tgz. Extracting by manifest.
+784 silly tarball no local data for @aws-sdk/credential-provider-web-identity@https://registry.npmjs.org/@aws-sdk/credential-provider-web-identity/-/credential-provider-web-identity-3.342.0.tgz. Extracting by manifest.
+785 silly tarball no local data for @aws-sdk/credential-provider-node@https://registry.npmjs.org/@aws-sdk/credential-provider-node/-/credential-provider-node-3.342.0.tgz. Extracting by manifest.
+786 silly tarball no local data for @aws-sdk/credential-provider-imds@https://registry.npmjs.org/@aws-sdk/credential-provider-imds/-/credential-provider-imds-3.342.0.tgz. Extracting by manifest.
+787 silly tarball no local data for @aws-sdk/credential-provider-sso@https://registry.npmjs.org/@aws-sdk/credential-provider-sso/-/credential-provider-sso-3.342.0.tgz. Extracting by manifest.
+788 silly tarball no local data for @aws-sdk/credential-provider-env@https://registry.npmjs.org/@aws-sdk/credential-provider-env/-/credential-provider-env-3.342.0.tgz. Extracting by manifest.
+789 silly tarball no local data for @aws-sdk/credential-provider-cognito-identity@https://registry.npmjs.org/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-3.342.0.tgz. Extracting by manifest.
+790 silly tarball no local data for @aws-sdk/client-sso@https://registry.npmjs.org/@aws-sdk/client-sso/-/client-sso-3.342.0.tgz. Extracting by manifest.
+791 silly tarball no local data for @aws-sdk/client-sts@https://registry.npmjs.org/@aws-sdk/client-sts/-/client-sts-3.342.0.tgz. Extracting by manifest.
+792 silly tarball no local data for @aws-sdk/client-cognito-identity@https://registry.npmjs.org/@aws-sdk/client-cognito-identity/-/client-cognito-identity-3.342.0.tgz. Extracting by manifest.
+793 silly tarball no local data for @aws-sdk/credential-providers@https://registry.npmjs.org/@aws-sdk/credential-providers/-/credential-providers-3.342.0.tgz. Extracting by manifest.
+794 timing reifyNode:node_modules/ultron Completed in 1290ms
+795 timing reifyNode:node_modules/wrappy Completed in 1341ms
+796 timing reifyNode:node_modules/ip Completed in 1341ms
+797 timing reifyNode:node_modules/ms Completed in 1340ms
+798 timing reifyNode:node_modules/process-nextick-args Completed in 1341ms
+799 timing reifyNode:node_modules/@types/webidl-conversions Completed in 1342ms
+800 timing reifyNode:node_modules/run-parallel-limit Completed in 1345ms
+801 timing reifyNode:node_modules/once Completed in 1346ms
+802 timing reifyNode:node_modules/multistream Completed in 1347ms
+803 timing reifyNode:node_modules/through2 Completed in 1347ms
+804 timing reifyNode:node_modules/end-of-stream Completed in 1350ms
+805 timing reifyNode:node_modules/core-util-is Completed in 1372ms
+806 timing reifyNode:node_modules/inherits Completed in 1384ms
+807 timing reifyNode:node_modules/ieee754 Completed in 1386ms
+808 timing reifyNode:node_modules/queue-microtask Completed in 1387ms
+809 timing reifyNode:node_modules/is-buffer Completed in 1386ms
+810 timing reifyNode:node_modules/escape-string-regexp Completed in 1388ms
+811 timing reifyNode:node_modules/stream-shift Completed in 1411ms
+812 timing reifyNode:node_modules/memory-pager Completed in 1424ms
+813 timing reifyNode:node_modules/util-deprecate Completed in 1424ms
+814 timing reifyNode:node_modules/string_decoder Completed in 1424ms
+815 timing reifyNode:node_modules/base64-js Completed in 1428ms
+816 timing reifyNode:node_modules/napi-macros Completed in 1429ms
+817 timing reifyNode:node_modules/module-error Completed in 1428ms
+818 timing reifyNode:node_modules/async-limiter Completed in 1449ms
+819 timing reifyNode:node_modules/duplexify Completed in 1451ms
+820 timing reifyNode:node_modules/webidl-conversions Completed in 1452ms
+821 timing reifyNode:node_modules/sparse-bitfield Completed in 1457ms
+822 timing reifyNode:node_modules/strnum Completed in 1458ms
+823 timing reifyNode:node_modules/catering Completed in 1462ms
+824 timing reifyNode:node_modules/pump Completed in 1463ms
+825 timing reifyNode:node_modules/duplexify/node_modules/safe-buffer Completed in 1475ms
+826 timing reifyNode:node_modules/ws/node_modules/safe-buffer Completed in 1476ms
+827 timing reifyNode:node_modules/websocket-stream/node_modules/safe-buffer Completed in 1467ms
+828 timing reifyNode:node_modules/duplexify/node_modules/string_decoder Completed in 1480ms
+829 timing reifyNode:node_modules/websocket-stream/node_modules/string_decoder Completed in 1470ms
+830 timing reifyNode:node_modules/safe-buffer Completed in 1480ms
+831 timing reifyNode:node_modules/isarray Completed in 1492ms
+832 timing reifyNode:node_modules/node-gyp-build Completed in 1491ms
+833 timing reifyNode:node_modules/punycode Completed in 1511ms
+834 timing reifyNode:node_modules/event-lite Completed in 1519ms
+835 timing reifyNode:node_modules/debug Completed in 1518ms
+836 timing reifyNode:node_modules/retimer Completed in 1517ms
+837 timing reifyNode:node_modules/aedes-persistence-level Completed in 1519ms
+838 timing reifyNode:node_modules/uuid-parse Completed in 1538ms
+839 timing reifyNode:node_modules/@aws-sdk/util-hex-encoding Completed in 1557ms
+840 timing reifyNode:node_modules/reusify Completed in 1557ms
+841 timing reifyNode:node_modules/fastfall Completed in 1558ms
+842 timing reifyNode:node_modules/@types/whatwg-url Completed in 1578ms
+843 warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+844 timing reifyNode:node_modules/querystring Completed in 1584ms
+845 timing reifyNode:node_modules/fastseries Completed in 1582ms
+846 timing reifyNode:node_modules/hyperid Completed in 1583ms
+847 timing reifyNode:node_modules/@aws-sdk/is-array-buffer Completed in 1608ms
+848 timing reifyNode:node_modules/@aws-sdk/util-buffer-from Completed in 1609ms
+849 timing reifyNode:node_modules/@aws-sdk/util-locate-window Completed in 1610ms
+850 timing reifyNode:node_modules/aedes-persistence-mongodb Completed in 1610ms
+851 timing reifyNode:node_modules/bson/node_modules/buffer Completed in 1615ms
+852 timing reifyNode:node_modules/aedes-persistence-level/node_modules/buffer Completed in 1612ms
+853 timing reifyNode:node_modules/aedes-packet/node_modules/buffer Completed in 1614ms
+854 timing reifyNode:node_modules/aedes-persistence-level/node_modules/aedes-packet Completed in 1614ms
+855 timing reifyNode:node_modules/buffer Completed in 1647ms
+856 timing reifyNode:node_modules/level Completed in 1648ms
+857 timing reifyNode:node_modules/@aws-sdk/util-body-length-node Completed in 1675ms
+858 timing reifyNode:node_modules/@aws-sdk/util-config-provider Completed in 1676ms
+859 timing reifyNode:node_modules/@aws-crypto/supports-web-crypto Completed in 1675ms
+860 timing reifyNode:node_modules/@aws-sdk/util-body-length-browser Completed in 1676ms
+861 timing reifyNode:node_modules/mongodb-connection-string-url Completed in 1676ms
+862 timing reifyNode:node_modules/level-supports Completed in 1675ms
+863 timing reifyNode:node_modules/aedes-cached-persistence Completed in 1678ms
+864 timing reifyNode:node_modules/fastparallel Completed in 1701ms
+865 timing reifyNode:node_modules/websocket-stream Completed in 1700ms
+866 timing reifyNode:node_modules/aedes-packet Completed in 1700ms
+867 timing reifyNode:node_modules/@aws-crypto/supports-web-crypto/node_modules/tslib Completed in 1707ms
+868 timing reifyNode:node_modules/@aws-crypto/sha256-browser/node_modules/tslib Completed in 1705ms
+869 timing reifyNode:node_modules/@aws-crypto/sha256-js/node_modules/tslib Completed in 1707ms
+870 timing reifyNode:node_modules/@aws-crypto/ie11-detection/node_modules/tslib Completed in 1709ms
+871 timing reifyNode:node_modules/@aws-crypto/util/node_modules/tslib Completed in 1709ms
+872 timing reifyNode:node_modules/@aws-crypto/crc32/node_modules/tslib Completed in 1713ms
+873 timing reifyNode:node_modules/qlobber Completed in 1719ms
+874 timing reifyNode:node_modules/aedes-persistence-level/node_modules/bl Completed in 1721ms
+875 timing reifyNode:node_modules/aedes-packet/node_modules/bl Completed in 1722ms
+876 timing reifyNode:node_modules/aedes-persistence-level/node_modules/qlobber Completed in 1721ms
+877 timing reifyNode:node_modules/browser-level Completed in 1738ms
+878 timing reifyNode:node_modules/@aws-sdk/util-uri-escape Completed in 1756ms
+879 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/querystring-parser/-/querystring-parser-3.342.0.tgz 1590ms (cache miss)
+880 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/protocol-http/-/protocol-http-3.342.0.tgz 1584ms (cache miss)
+881 timing reifyNode:node_modules/level-transcoder Completed in 1771ms
+882 timing reifyNode:node_modules/aedes-persistence Completed in 1771ms
+883 timing reifyNode:node_modules/@aws-sdk/querystring-parser Completed in 1781ms
+884 http fetch GET 200 https://registry.npmjs.org/@aws-crypto/crc32/-/crc32-3.0.0.tgz 1609ms (cache miss)
+885 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-sdk-sts/-/middleware-sdk-sts-3.342.0.tgz 1588ms (cache miss)
+886 timing reifyNode:node_modules/@aws-sdk/util-utf8-browser Completed in 1788ms
+887 timing reifyNode:node_modules/native-url Completed in 1786ms
+888 timing reifyNode:node_modules/tr46 Completed in 1798ms
+889 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/querystring-builder/-/querystring-builder-3.342.0.tgz 1616ms (cache miss)
+890 timing reifyNode:node_modules/@aws-sdk/querystring-builder Completed in 1797ms
+891 timing reifyNode:node_modules/@aws-sdk/middleware-sdk-sts Completed in 1801ms
+892 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/abort-controller/-/abort-controller-3.342.0.tgz 1631ms (cache miss)
+893 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/service-error-classification/-/service-error-classification-3.342.0.tgz 1620ms (cache miss)
+894 timing reifyNode:node_modules/@aws-sdk/service-error-classification Completed in 1809ms
+895 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/eventstream-codec/-/eventstream-codec-3.342.0.tgz 1636ms (cache miss)
+896 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/token-providers/-/token-providers-3.342.0.tgz 1623ms (cache miss)
+897 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/shared-ini-file-loader/-/shared-ini-file-loader-3.342.0.tgz 1624ms (cache miss)
+898 timing reifyNode:node_modules/int64-buffer Completed in 1820ms
+899 http fetch GET 200 https://registry.npmjs.org/@smithy/types/-/types-1.0.0.tgz 1628ms (cache miss)
+900 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/util-middleware/-/util-middleware-3.342.0.tgz 1649ms (cache miss)
+901 timing reifyNode:node_modules/@aws-sdk/util-middleware Completed in 1846ms
+902 timing reifyNode:node_modules/bl Completed in 1849ms
+903 timing reifyNode:node_modules/whatwg-url Completed in 1860ms
+904 timing reifyNode:node_modules/ws Completed in 1868ms
+905 timing reifyNode:node_modules/@aws-sdk/abort-controller Completed in 1867ms
+906 timing reifyNode:node_modules/smart-buffer Completed in 1872ms
+907 timing reifyNode:node_modules/@aws-crypto/util Completed in 1872ms
+908 timing reifyNode:node_modules/mqemitter Completed in 1870ms
+909 timing reifyNode:node_modules/@aws-crypto/crc32 Completed in 1882ms
+910 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/util-defaults-mode-browser/-/util-defaults-mode-browser-3.342.0.tgz 1700ms (cache miss)
+911 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/util-defaults-mode-node/-/util-defaults-mode-node-3.342.0.tgz 1697ms (cache miss)
+912 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/url-parser/-/url-parser-3.342.0.tgz 1691ms (cache miss)
+913 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/node-config-provider/-/node-config-provider-3.342.0.tgz 1688ms (cache miss)
+914 timing reifyNode:node_modules/@aws-sdk/url-parser Completed in 1923ms
+915 timing reifyNode:node_modules/@aws-crypto/ie11-detection Completed in 1924ms
+916 timing reifyNode:node_modules/@aws-sdk/util-utf8 Completed in 1925ms
+917 timing reifyNode:node_modules/@smithy/types Completed in 1931ms
+918 timing reifyNode:node_modules/bowser Completed in 1935ms
+919 timing reifyNode:node_modules/@aws-sdk/util-base64 Completed in 1943ms
+920 timing reifyNode:node_modules/@aws-crypto/sha256-browser Completed in 1941ms
+921 timing reifyNode:node_modules/@aws-crypto/sha256-js Completed in 1970ms
+922 timing reifyNode:node_modules/mqtt-packet Completed in 1968ms
+923 timing reifyNode:node_modules/aedes-persistence-level/node_modules/mqtt-packet Completed in 1967ms
+924 timing reifyNode:node_modules/node-red-contrib-aedes Completed in 1976ms
+925 timing reifyNode:node_modules/fast-xml-parser Completed in 1991ms
+926 timing reifyNode:node_modules/duplexify/node_modules/readable-stream Completed in 1996ms
+927 timing reifyNode:node_modules/websocket-stream/node_modules/readable-stream Completed in 1986ms
+928 timing reifyNode:node_modules/aedes-packet/node_modules/mqtt-packet Completed in 1988ms
+929 timing reifyNode:node_modules/readable-stream Completed in 2028ms
+930 timing reifyNode:node_modules/@aws-sdk/util-defaults-mode-node Completed in 2034ms
+931 timing reifyNode:node_modules/@aws-sdk/util-defaults-mode-browser Completed in 2035ms
+932 timing reifyNode:node_modules/@aws-sdk/node-config-provider Completed in 2058ms
+933 timing reifyNode:node_modules/saslprep Completed in 2056ms
+934 timing reifyNode:node_modules/@aws-sdk/protocol-http Completed in 2070ms
+935 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-host-header/-/middleware-host-header-3.342.0.tgz 1827ms (cache miss)
+936 timing reifyNode:node_modules/@aws-sdk/middleware-host-header Completed in 2070ms
+937 http fetch GET 200 https://registry.npmjs.org/@smithy/protocol-http/-/protocol-http-1.0.1.tgz 1878ms (cache miss)
+938 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-logger/-/middleware-logger-3.342.0.tgz 1856ms (cache miss)
+939 timing reifyNode:node_modules/@aws-sdk/middleware-logger Completed in 2120ms
+940 timing reifyNode:node_modules/@aws-sdk/token-providers Completed in 2132ms
+941 timing reifyNode:node_modules/@smithy/protocol-http Completed in 2377ms
+942 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/util-user-agent-node/-/util-user-agent-node-3.342.0.tgz 2204ms (cache miss)
+943 timing reifyNode:node_modules/@aws-sdk/eventstream-codec Completed in 2428ms
+944 timing reifyNode:node_modules/socks Completed in 2447ms
+945 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/signature-v4/-/signature-v4-3.342.0.tgz 2303ms (cache miss)
+946 timing reifyNode:node_modules/@aws-sdk/util-user-agent-node Completed in 2497ms
+947 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/util-user-agent-browser/-/util-user-agent-browser-3.342.0.tgz 2295ms (cache miss)
+948 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/util-retry/-/util-retry-3.342.0.tgz 2305ms (cache miss)
+949 timing reifyNode:node_modules/@aws-sdk/signature-v4 Completed in 2521ms
+950 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/invalid-dependency/-/invalid-dependency-3.342.0.tgz 2272ms (cache miss)
+951 timing reifyNode:node_modules/@aws-sdk/shared-ini-file-loader Completed in 2531ms
+952 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-serde/-/middleware-serde-3.342.0.tgz 2312ms (cache miss)
+953 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/node-http-handler/-/node-http-handler-3.342.0.tgz 2318ms (cache miss)
+954 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.5.2.tgz 2283ms (cache miss)
+955 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-stack/-/middleware-stack-3.342.0.tgz 2335ms (cache miss)
+956 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/fetch-http-handler/-/fetch-http-handler-3.342.0.tgz 2305ms (cache miss)
+957 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-recursion-detection/-/middleware-recursion-detection-3.342.0.tgz 2379ms (cache miss)
+958 timing reifyNode:node_modules/@aws-sdk/middleware-recursion-detection Completed in 2609ms
+959 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-user-agent/-/middleware-user-agent-3.342.0.tgz 2392ms (cache miss)
+960 timing reifyNode:node_modules/@aws-sdk/util-user-agent-browser Completed in 2616ms
+961 timing reifyNode:node_modules/@aws-sdk/invalid-dependency Completed in 2638ms
+962 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/config-resolver/-/config-resolver-3.342.0.tgz 2397ms (cache miss)
+963 timing reifyNode:node_modules/tslib Completed in 2670ms
+964 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-retry/-/middleware-retry-3.342.0.tgz 2418ms (cache miss)
+965 timing reifyNode:node_modules/@aws-sdk/middleware-serde Completed in 2677ms
+966 timing reifyNode:node_modules/@aws-sdk/middleware-user-agent Completed in 2677ms
+967 timing reifyNode:node_modules/@aws-sdk/fetch-http-handler Completed in 2684ms
+968 timing reifyNode:node_modules/hyperid/node_modules/uuid Completed in 2682ms
+969 timing reifyNode:node_modules/@aws-sdk/middleware-retry/node_modules/uuid Completed in 2687ms
+970 timing reifyNode:node_modules/@aws-sdk/middleware-stack Completed in 2692ms
+971 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-endpoint/-/middleware-endpoint-3.342.0.tgz 2458ms (cache miss)
+972 timing reifyNode:node_modules/msgpack-lite Completed in 2715ms
+973 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-signing/-/middleware-signing-3.342.0.tgz 2477ms (cache miss)
+974 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-node/-/credential-provider-node-3.342.0.tgz 2464ms (cache miss)
+975 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-ini/-/credential-provider-ini-3.342.0.tgz 2470ms (cache miss)
+976 timing reifyNode:node_modules/uuid Completed in 2734ms
+977 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-web-identity/-/credential-provider-web-identity-3.342.0.tgz 2480ms (cache miss)
+978 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-env/-/credential-provider-env-3.342.0.tgz 2432ms (cache miss)
+979 timing reifyNode:node_modules/@aws-sdk/credential-provider-env Completed in 2790ms
+980 timing reifyNode:node_modules/@aws-sdk/credential-provider-web-identity Completed in 2805ms
+981 timing reifyNode:node_modules/@aws-sdk/credential-provider-node Completed in 2824ms
+982 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-3.342.0.tgz 2499ms (cache miss)
+983 timing reifyNode:node_modules/aedes Completed in 2846ms
+984 timing reifyNode:node_modules/@aws-sdk/util-retry Completed in 2873ms
+985 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/middleware-content-length/-/middleware-content-length-3.342.0.tgz 2629ms (cache miss)
+986 timing reifyNode:node_modules/@aws-sdk/middleware-content-length Completed in 2879ms
+987 timing reifyNode:node_modules/@aws-sdk/middleware-signing Completed in 2925ms
+988 timing reifyNode:node_modules/abstract-level Completed in 2924ms
+989 timing reifyNode:node_modules/@aws-sdk/credential-provider-ini Completed in 2985ms
+990 timing reifyNode:node_modules/@aws-sdk/middleware-retry Completed in 3001ms
+991 timing reifyNode:node_modules/@aws-sdk/credential-provider-cognito-identity Completed in 3061ms
+992 timing reifyNode:node_modules/@aws-sdk/middleware-endpoint Completed in 3068ms
+993 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/client-sso-oidc/-/client-sso-oidc-3.342.0.tgz 2901ms (cache miss)
+994 timing reifyNode:node_modules/@aws-sdk/client-sso-oidc Completed in 3086ms
+995 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/hash-node/-/hash-node-3.342.0.tgz 2859ms (cache miss)
+996 timing reifyNode:node_modules/@aws-sdk/hash-node Completed in 3116ms
+997 timing reifyNode:node_modules/@aws-sdk/node-http-handler Completed in 3121ms
+998 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/smithy-client/-/smithy-client-3.342.0.tgz 2910ms (cache miss)
+999 timing reifyNode:node_modules/@aws-sdk/smithy-client Completed in 3127ms
+1000 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-process/-/credential-provider-process-3.342.0.tgz 2891ms (cache miss)
+1001 timing reifyNode:node_modules/@aws-sdk/credential-provider-process Completed in 3180ms
+1002 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-sso/-/credential-provider-sso-3.342.0.tgz 2877ms (cache miss)
+1003 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-provider-imds/-/credential-provider-imds-3.342.0.tgz 2967ms (cache miss)
+1004 timing reifyNode:node_modules/@aws-sdk/credential-provider-sso Completed in 3270ms
+1005 timing reifyNode:node_modules/@aws-sdk/config-resolver Completed in 3289ms
+1006 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/property-provider/-/property-provider-3.342.0.tgz 3042ms (cache miss)
+1007 timing reifyNode:node_modules/@aws-sdk/property-provider Completed in 3430ms
+1008 timing reifyNode:node_modules/@aws-sdk/credential-provider-imds Completed in 3550ms
+1009 timing reifyNode:node_modules/bson Completed in 3566ms
+1010 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/util-endpoints/-/util-endpoints-3.342.0.tgz 3381ms (cache miss)
+1011 timing reifyNode:node_modules/@aws-sdk/util-endpoints Completed in 3590ms
+1012 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/credential-providers/-/credential-providers-3.342.0.tgz 3283ms (cache miss)
+1013 timing reifyNode:node_modules/@aws-sdk/credential-providers Completed in 3642ms
+1014 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/types/-/types-3.342.0.tgz 3396ms (cache miss)
+1015 timing reifyNode:node_modules/@aws-sdk/types Completed in 3658ms
+1016 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-20.2.5.tgz 3607ms (cache miss)
+1017 timing reifyNode:node_modules/@types/node Completed in 3788ms
+1018 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/client-sso/-/client-sso-3.342.0.tgz 3454ms (cache miss)
+1019 timing reifyNode:node_modules/@aws-sdk/client-sso Completed in 3802ms
+1020 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/client-sts/-/client-sts-3.342.0.tgz 3469ms (cache miss)
+1021 timing reifyNode:node_modules/@aws-sdk/client-sts Completed in 3818ms
+1022 http fetch GET 200 https://registry.npmjs.org/@aws-sdk/client-cognito-identity/-/client-cognito-identity-3.342.0.tgz 3522ms (cache miss)
+1023 timing reifyNode:node_modules/@aws-sdk/client-cognito-identity Completed in 3872ms
+1024 timing reifyNode:node_modules/mongodb Completed in 3909ms
+1025 timing reifyNode:node_modules/classic-level Completed in 3950ms
+1026 timing reify:unpack Completed in 3960ms
+1027 timing reify:unretire Completed in 1ms
+1028 timing build:queue Completed in 18ms
+1029 timing build:link:node_modules/fast-xml-parser Completed in 15ms
+1030 timing build:link:node_modules/msgpack-lite Completed in 14ms
+1031 timing build:link:node_modules/node-gyp-build Completed in 14ms
+1032 timing build:link:node_modules/uuid Completed in 13ms
+1033 timing build:link:node_modules/@aws-sdk/middleware-retry/node_modules/uuid Completed in 13ms
+1034 timing build:link:node_modules/hyperid/node_modules/uuid Completed in 13ms
+1035 timing build:link Completed in 15ms
+1036 info run classic-level@1.3.0 install node_modules/classic-level node-gyp-build
+1037 info run classic-level@1.3.0 install { code: 0, signal: null }
+1038 timing build:run:install:node_modules/classic-level Completed in 219ms
+1039 timing build:run:install Completed in 220ms
+1040 timing build:deps Completed in 253ms
+1041 timing build Completed in 253ms
+1042 timing reify:build Completed in 254ms
+1043 timing reify:trash Completed in 0ms
+1044 timing reify:save Completed in 93ms
+1045 timing reify Completed in 35796ms
+1046 silly ADD node_modules/core-util-is
+1047 silly ADD node_modules/ultron
+1048 silly ADD node_modules/async-limiter
+1049 silly ADD node_modules/punycode
+1050 silly ADD node_modules/webidl-conversions
+1051 silly ADD node_modules/tr46
+1052 silly ADD node_modules/stream-shift
+1053 silly ADD node_modules/ws
+1054 silly ADD node_modules/ws/node_modules/safe-buffer
+1055 silly ADD node_modules/duplexify
+1056 silly ADD node_modules/duplexify/node_modules/string_decoder
+1057 silly ADD node_modules/duplexify/node_modules/safe-buffer
+1058 silly ADD node_modules/duplexify/node_modules/readable-stream
+1059 silly ADD node_modules/safe-buffer
+1060 silly ADD node_modules/memory-pager
+1061 silly ADD node_modules/smart-buffer
+1062 silly ADD node_modules/ip
+1063 silly ADD node_modules/sparse-bitfield
+1064 silly ADD node_modules/util-deprecate
+1065 silly ADD node_modules/string_decoder
+1066 silly ADD node_modules/wrappy
+1067 silly ADD node_modules/querystring
+1068 silly ADD node_modules/isarray
+1069 silly ADD node_modules/int64-buffer
+1070 silly ADD node_modules/event-lite
+1071 silly ADD node_modules/ms
+1072 silly ADD node_modules/readable-stream
+1073 silly ADD node_modules/inherits
+1074 silly ADD node_modules/process-nextick-args
+1075 silly ADD node_modules/debug
+1076 silly ADD node_modules/bl
+1077 silly ADD node_modules/@types/webidl-conversions
+1078 silly ADD node_modules/@types/node
+1079 silly ADD node_modules/whatwg-url
+1080 silly ADD node_modules/@types/whatwg-url
+1081 silly ADD node_modules/strnum
+1082 silly ADD node_modules/bowser
+1083 silly ADD node_modules/@aws-sdk/querystring-parser
+1084 silly ADD node_modules/@aws-sdk/client-sso-oidc
+1085 silly ADD node_modules/@aws-crypto/crc32
+1086 silly ADD node_modules/@aws-crypto/crc32/node_modules/tslib
+1087 silly ADD node_modules/@aws-sdk/util-hex-encoding
+1088 silly ADD node_modules/@aws-sdk/is-array-buffer
+1089 silly ADD node_modules/@aws-sdk/eventstream-codec
+1090 silly ADD node_modules/@aws-sdk/util-uri-escape
+1091 silly ADD node_modules/@aws-sdk/abort-controller
+1092 silly ADD node_modules/@aws-sdk/signature-v4
+1093 silly ADD node_modules/@aws-sdk/service-error-classification
+1094 silly ADD node_modules/@aws-sdk/util-buffer-from
+1095 silly ADD node_modules/@aws-sdk/querystring-builder
+1096 silly ADD node_modules/@aws-sdk/protocol-http
+1097 silly ADD node_modules/@aws-sdk/token-providers
+1098 silly ADD node_modules/@aws-sdk/shared-ini-file-loader
+1099 silly ADD node_modules/@aws-sdk/util-middleware
+1100 silly ADD node_modules/@aws-sdk/util-config-provider
+1101 silly ADD node_modules/fast-xml-parser
+1102 silly ADD node_modules/@aws-sdk/middleware-sdk-sts
+1103 silly ADD node_modules/@aws-sdk/util-utf8-browser
+1104 silly ADD node_modules/@aws-sdk/util-locate-window
+1105 silly ADD node_modules/@aws-crypto/util
+1106 silly ADD node_modules/@aws-crypto/util/node_modules/tslib
+1107 silly ADD node_modules/@aws-crypto/supports-web-crypto
+1108 silly ADD node_modules/@aws-crypto/supports-web-crypto/node_modules/tslib
+1109 silly ADD node_modules/@aws-crypto/ie11-detection
+1110 silly ADD node_modules/@aws-crypto/ie11-detection/node_modules/tslib
+1111 silly ADD node_modules/@smithy/types
+1112 silly ADD node_modules/@smithy/protocol-http
+1113 silly ADD node_modules/@aws-sdk/util-utf8
+1114 silly ADD node_modules/@aws-sdk/util-user-agent-node
+1115 silly ADD node_modules/@aws-sdk/util-user-agent-browser
+1116 silly ADD node_modules/@aws-sdk/util-retry
+1117 silly ADD node_modules/@aws-sdk/util-endpoints
+1118 silly ADD node_modules/@aws-sdk/util-defaults-mode-node
+1119 silly ADD node_modules/@aws-sdk/util-defaults-mode-browser
+1120 silly ADD node_modules/@aws-sdk/util-body-length-node
+1121 silly ADD node_modules/@aws-sdk/util-body-length-browser
+1122 silly ADD node_modules/@aws-sdk/util-base64
+1123 silly ADD node_modules/@aws-sdk/url-parser
+1124 silly ADD node_modules/@aws-sdk/smithy-client
+1125 silly ADD node_modules/@aws-sdk/node-http-handler
+1126 silly ADD node_modules/@aws-sdk/node-config-provider
+1127 silly ADD node_modules/@aws-sdk/middleware-user-agent
+1128 silly ADD node_modules/@aws-sdk/middleware-stack
+1129 silly ADD node_modules/@aws-sdk/middleware-signing
+1130 silly ADD node_modules/@aws-sdk/middleware-serde
+1131 silly ADD node_modules/@aws-sdk/middleware-retry
+1132 silly ADD node_modules/@aws-sdk/middleware-retry/node_modules/uuid
+1133 silly ADD node_modules/@aws-sdk/middleware-recursion-detection
+1134 silly ADD node_modules/@aws-sdk/middleware-logger
+1135 silly ADD node_modules/@aws-sdk/middleware-host-header
+1136 silly ADD node_modules/@aws-sdk/middleware-endpoint
+1137 silly ADD node_modules/@aws-sdk/middleware-content-length
+1138 silly ADD node_modules/@aws-sdk/invalid-dependency
+1139 silly ADD node_modules/@aws-sdk/hash-node
+1140 silly ADD node_modules/@aws-sdk/fetch-http-handler
+1141 silly ADD node_modules/@aws-sdk/config-resolver
+1142 silly ADD node_modules/@aws-crypto/sha256-js
+1143 silly ADD node_modules/@aws-crypto/sha256-js/node_modules/tslib
+1144 silly ADD node_modules/@aws-crypto/sha256-browser
+1145 silly ADD node_modules/@aws-crypto/sha256-browser/node_modules/tslib
+1146 silly ADD node_modules/tslib
+1147 silly ADD node_modules/@aws-sdk/types
+1148 silly ADD node_modules/@aws-sdk/property-provider
+1149 silly ADD node_modules/@aws-sdk/credential-provider-web-identity
+1150 silly ADD node_modules/@aws-sdk/credential-provider-sso
+1151 silly ADD node_modules/@aws-sdk/credential-provider-process
+1152 silly ADD node_modules/@aws-sdk/credential-provider-node
+1153 silly ADD node_modules/@aws-sdk/credential-provider-ini
+1154 silly ADD node_modules/@aws-sdk/credential-provider-imds
+1155 silly ADD node_modules/@aws-sdk/credential-provider-env
+1156 silly ADD node_modules/@aws-sdk/credential-provider-cognito-identity
+1157 silly ADD node_modules/@aws-sdk/client-sts
+1158 silly ADD node_modules/@aws-sdk/client-sso
+1159 silly ADD node_modules/@aws-sdk/client-cognito-identity
+1160 silly ADD node_modules/socks
+1161 silly ADD node_modules/saslprep
+1162 silly ADD node_modules/mongodb-connection-string-url
+1163 silly ADD node_modules/bson
+1164 silly ADD node_modules/bson/node_modules/buffer
+1165 silly ADD node_modules/@aws-sdk/credential-providers
+1166 silly ADD node_modules/node-gyp-build
+1167 silly ADD node_modules/napi-macros
+1168 silly ADD node_modules/ieee754
+1169 silly ADD node_modules/base64-js
+1170 silly ADD node_modules/queue-microtask
+1171 silly ADD node_modules/level-transcoder
+1172 silly ADD node_modules/level-supports
+1173 silly ADD node_modules/is-buffer
+1174 silly ADD node_modules/buffer
+1175 silly ADD node_modules/run-parallel-limit
+1176 silly ADD node_modules/module-error
+1177 silly ADD node_modules/catering
+1178 silly ADD node_modules/abstract-level
+1179 silly ADD node_modules/classic-level
+1180 silly ADD node_modules/browser-level
+1181 silly ADD node_modules/uuid-parse
+1182 silly ADD node_modules/once
+1183 silly ADD node_modules/multistream
+1184 silly ADD node_modules/through2
+1185 silly ADD node_modules/pump
+1186 silly ADD node_modules/native-url
+1187 silly ADD node_modules/mongodb
+1188 silly ADD node_modules/escape-string-regexp
+1189 silly ADD node_modules/aedes-cached-persistence
+1190 silly ADD node_modules/msgpack-lite
+1191 silly ADD node_modules/qlobber
+1192 silly ADD node_modules/uuid
+1193 silly ADD node_modules/reusify
+1194 silly ADD node_modules/retimer
+1195 silly ADD node_modules/mqtt-packet
+1196 silly ADD node_modules/mqemitter
+1197 silly ADD node_modules/hyperid
+1198 silly ADD node_modules/hyperid/node_modules/uuid
+1199 silly ADD node_modules/fastseries
+1200 silly ADD node_modules/fastparallel
+1201 silly ADD node_modules/fastfall
+1202 silly ADD node_modules/end-of-stream
+1203 silly ADD node_modules/aedes-persistence
+1204 silly ADD node_modules/aedes-packet
+1205 silly ADD node_modules/aedes-packet/node_modules/buffer
+1206 silly ADD node_modules/aedes-packet/node_modules/bl
+1207 silly ADD node_modules/aedes-packet/node_modules/mqtt-packet
+1208 silly ADD node_modules/websocket-stream
+1209 silly ADD node_modules/websocket-stream/node_modules/string_decoder
+1210 silly ADD node_modules/websocket-stream/node_modules/safe-buffer
+1211 silly ADD node_modules/websocket-stream/node_modules/readable-stream
+1212 silly ADD node_modules/level
+1213 silly ADD node_modules/aedes-persistence-mongodb
+1214 silly ADD node_modules/aedes-persistence-level
+1215 silly ADD node_modules/aedes-persistence-level/node_modules/buffer
+1216 silly ADD node_modules/aedes-persistence-level/node_modules/bl
+1217 silly ADD node_modules/aedes-persistence-level/node_modules/mqtt-packet
+1218 silly ADD node_modules/aedes-persistence-level/node_modules/qlobber
+1219 silly ADD node_modules/aedes-persistence-level/node_modules/aedes-packet
+1220 silly ADD node_modules/aedes
+1221 silly ADD node_modules/node-red-contrib-aedes
+1222 timing command:install Completed in 35807ms
+1223 verbose exit 0
+1224 timing npm Completed in 35991ms
+1225 info ok
